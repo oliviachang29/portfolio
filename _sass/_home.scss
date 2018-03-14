@@ -1,0 +1,156 @@
+header {
+  background-image: url("/assets/images/header.jpg");
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.add-border {
+	width: 90%;
+	height: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+#name {
+	/* need this to scale */
+	font-size: 5em; 
+	margin-bottom: 30px;
+}
+
+.underline {
+	width: 2em;
+	height: 3px;
+	background-color: #000;
+	border-radius: 100px;
+	margin: 0 auto;
+}
+
+#underline-logo {
+	width: 6em;
+}
+
+#icons {
+	margin-top: 30px;
+	span {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+section {
+	margin: 0 auto;
+	width: 85%;
+}
+
+.expertise-row {
+	margin: auto;
+	/*width: 100%;*/
+}
+
+.expertise-box {
+	text-align: center;
+}
+
+.expertise-img {
+	margin: 50px 0px 30px;
+}	
+
+.title {
+	font-size: 1.8em;
+	font-weight: 300;
+}
+
+.description {
+	font-size: 1.2em;
+	font-weight: 100;
+}
+
+.dot-box {
+	
+	margin-top: 40px;
+
+	/* Medium Devices, Desktops */
+	@media only screen and (min-width : 992px) {
+		min-height: 20%;
+	  min-height: 20vh;
+	  display: flex;
+	  align-items: center;
+	  margin: 0;
+	}
+
+}
+
+#left-box {
+	margin: 0;
+
+	/* Medium Devices, Desktops */
+	@media only screen and (min-width : 992px) {
+		margin-left: 35px;
+	}
+
+	/* Large Devices, Wide Screens */
+	@media only screen and (min-width : 1200px) {
+		margin-left: 50px;
+	}
+
+}
+
+.dots {
+	width: 70px;
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-between;
+
+}
+
+.dot {
+	font-size: 6px;
+	font-color: "#D8D8D8";
+}
+
+#mere {
+	margin-top: 0;
+	background-image: url("http://hellomere.com/uploads/1/3/9/3/13937089/background-images/1402241652.jpg");
+}
+
+#readlio {
+	background-image: url("https://readlio.com/assets/bg-teal-eb70664fec384dc3de39ad82be7d799560590f97b5ecf6e8d0c1b5b7c22ca481.png");
+}
+
+.project {
+	height: 30%;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100%;
+	background-color: transparent;
+	background-size: cover;
+	flex-direction: column;
+}
+
+.project-box {
+	padding: 50px;
+	border: 1px solid #D8D8D8;
+	/*border-radius: 4px;*/
+	margin: 30px 10px;
+}
+
+
+#work {
+	margin: 20px 0px 70px;
+}
+
+.project-title {
+	font-size: 36px;
+	font-weight: 300;
+	color: #fff;
+}
+
+.project-description {
+	font-weight: 100;
+	font-size: 18px;
+	color: #fff;	
+}
