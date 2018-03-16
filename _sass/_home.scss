@@ -113,50 +113,70 @@ header {
 }
 
 .grid-bottom {
-	margin-top: 40px;
+	/*margin-top: 40px;*/
 }
 
-#readlio-grid {
-	margin-top: 40px;
+.grid-right {
+	/*margin-top: 40px;*/
 
 	/* Medium Devices, Desktops */
 	@media only screen and (min-width : 992px) {
-		margin: 0;
+		/*margin: 0;*/
 	}
 
 }
 
-.project {
-	height: 30%;
-	vertical-align: middle;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	background-size: 100%;
-	background-color: transparent;
-	background-size: cover;
-	flex-direction: column;
-}
-
-.project-box {
-	padding: 50px;
-	border: 1px solid #D8D8D8;
-	/*border-radius: 4px;*/
-	margin: 30px 10px;
-}
-
 
 #work {
-	margin-bottom: 50px;
+	/*margin-bottom: 50px;*/
 }
 
-.project-title {
-	font-size: 36px;
-	font-weight: 300;
-	color: #fff;
+.button-container {
+	display: flex;
 }
 
-.project-description {
-	font-weight: 100;
-	font-size: 18px;
-	color: #fff;	
+#contact-btn {
+	margin: 0 auto;
+	padding: 15px 30px;
+	border: 1px solid black;
+	border-radius: 100px;
+	font-size: 20px;
+	color: black;
+	background-color: white;
+}
+
+.svg-wrapper {
+  
+  /*make sure to use same height/width as in the html*/
+  width: 200;
+  height: 60px;
+  display: inline-block;
+
+  margin-left: 25%;
+}
+
+#shape {
+  stroke-width: 5px;
+  fill: transparent;
+  stroke: black;
+  stroke-dasharray: 85 400;
+  stroke-dashoffset: -320;
+  transition: 1s all ease;
+}
+
+#text {
+  margin-top: -50px;
+  text-align: center;
+  p {
+  	font-size: 20px;
+  	font-weight: 300;
+  }
+}
+
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: black;
+  border-radius: 100px;
 }

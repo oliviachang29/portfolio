@@ -31,8 +31,7 @@ $white-color: #f1f1f1;
   flex-direction: row;
   justify-content: space-between;
 
-  span {
-    margin-top: 10px;
+  i {
     width: 30px;
     height: 30px;
   }
@@ -44,7 +43,6 @@ $white-color: #f1f1f1;
 * There are styles for icon and everything which are connected with it.
 */
 .icon {
-  display: inline-block;
   position: relative;
   z-index: 1;
   width: 50px;
@@ -55,6 +53,11 @@ $white-color: #f1f1f1;
   line-height: 52px;
   text-align: center;
   background-color: $main-color;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .icon:after {
