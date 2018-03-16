@@ -28,6 +28,10 @@ html, body {
   margin: 0;
 }
 
+* {
+  font-family: Fakt Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
 /* content */
 .content {
 	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -37,35 +41,13 @@ html, body {
             animation: fadein 2s;	
   width: 90%;
   margin: 0 auto;
-  padding: 80px 0 80px 0;
-  flex: 1;
-
-	/* Extra Small Devices, Phones */ 
-	@media only screen and (min-width : 480px) {
-		/*width: 50%;*/
-	}
-
-	/* Small Devices, Tablets */
-	@media only screen and (min-width : 768px) {
-		/*width: 60%;*/
-	}
-
-	/* Medium Devices, Desktops */
-	@media only screen and (min-width : 992px) {
-		/*width: 50%;*/
-	}
-
-	/* Large Devices, Wide Screens */
-	@media only screen and (min-width : 1200px) {
-		/*width: 40%;*/
-	}
-
 }
 
-* {
-	font-family: Fakt Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
+section {
+  margin: 0 auto;
+  width: 85%;
+  padding: 90px 0 10px 0;
 }
-
 
 .vertical-center {
 	 display: flex;

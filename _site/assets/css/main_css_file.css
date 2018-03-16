@@ -19,6 +19,9 @@ html, body {
   width: 100%;
   margin: 0; }
 
+* {
+  font-family: Fakt Pro,Helvetica Neue,Helvetica,Arial,sans-serif; }
+
 /* content */
 .content {
   -webkit-animation: fadein 2s;
@@ -31,28 +34,12 @@ html, body {
   /* Opera < 12.1 */
   animation: fadein 2s;
   width: 90%;
-  margin: 0 auto;
-  padding: 80px 0 80px 0;
-  flex: 1;
-  /* Extra Small Devices, Phones */
-  /* Small Devices, Tablets */
-  /* Medium Devices, Desktops */
-  /* Large Devices, Wide Screens */ }
-  @media only screen and (min-width: 480px) {
-    .content {
-      /*width: 50%;*/ } }
-  @media only screen and (min-width: 768px) {
-    .content {
-      /*width: 60%;*/ } }
-  @media only screen and (min-width: 992px) {
-    .content {
-      /*width: 50%;*/ } }
-  @media only screen and (min-width: 1200px) {
-    .content {
-      /*width: 40%;*/ } }
+  margin: 0 auto; }
 
-* {
-  font-family: Fakt Pro,Helvetica Neue,Helvetica,Arial,sans-serif; }
+section {
+  margin: 0 auto;
+  width: 85%;
+  padding: 90px 0 10px 0; }
 
 .vertical-center {
   display: flex;
@@ -95,7 +82,8 @@ header {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -o-background-size: cover; }
+  -o-background-size: cover;
+  position: relative; }
 
 .add-border {
   width: 90%;
@@ -105,35 +93,35 @@ header {
 
 #name {
   /* need this to scale */
-  font-size: 5em;
-  margin-bottom: 30px; }
+  font-size: 5em; }
 
 .underline {
   width: 2em;
   height: 3px;
   background-color: #000;
-  border-radius: 100px;
+  border-radius: 1000px;
   margin: 0 auto; }
 
 #underline-logo {
-  width: 6em; }
-
-#icons {
-  margin-top: 30px; }
-  #icons span {
-    width: 30px;
-    height: 30px; }
-
-section {
+  width: 6em;
   margin: 0 auto;
-  width: 85%; }
+  margin-top: 30px;
+  margin-bottom: 50px; }
 
 .expertise-row {
-  margin: auto;
-  /*width: 100%;*/ }
+  margin: 0 auto;
+  /* Small Devices, Tablets */ }
+  @media only screen and (min-width: 768px) {
+    .expertise-row {
+      display: flex;
+      flex-direction: row; } }
 
 .expertise-box {
-  text-align: center; }
+  text-align: center;
+  /* Small Devices, Tablets */ }
+  @media only screen and (min-width: 768px) {
+    .expertise-box {
+      width: 30%; } }
 
 .expertise-img {
   margin: 50px 0px 30px; }
@@ -149,24 +137,12 @@ section {
 .dot-box {
   margin-top: 40px;
   /* Medium Devices, Desktops */ }
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: 768px) {
     .dot-box {
-      min-height: 20%;
-      min-height: 20vh;
+      /*width: 30px;*/
       display: flex;
       align-items: center;
       margin: 0; } }
-
-#left-box {
-  margin: 0;
-  /* Medium Devices, Desktops */
-  /* Large Devices, Wide Screens */ }
-  @media only screen and (min-width: 992px) {
-    #left-box {
-      margin-left: 35px; } }
-  @media only screen and (min-width: 1200px) {
-    #left-box {
-      margin-left: 50px; } }
 
 .dots {
   width: 70px;
@@ -176,14 +152,20 @@ section {
 
 .dot {
   font-size: 6px;
-  font-color: "#D8D8D8"; }
+  color: "#D8D8D8"; }
 
 #mere {
-  margin-top: 0;
   background-image: url("http://hellomere.com/uploads/1/3/9/3/13937089/background-images/1402241652.jpg"); }
 
 #readlio {
-  background-image: url("https://readlio.com/assets/bg-teal-eb70664fec384dc3de39ad82be7d799560590f97b5ecf6e8d0c1b5b7c22ca481.png"); }
+  background-image: url("/assets/images/readlio.png"); }
+
+#readlio-grid {
+  margin-top: 40px;
+  /* Medium Devices, Desktops */ }
+  @media only screen and (min-width: 992px) {
+    #readlio-grid {
+      margin: 0; } }
 
 .project {
   height: 30%;
@@ -202,7 +184,7 @@ section {
   margin: 30px 10px; }
 
 #work {
-  margin: 20px 0px 70px; }
+  margin-bottom: 50px; }
 
 .project-title {
   font-size: 36px;
@@ -234,7 +216,8 @@ a {
 
 #footer-copyright {
   margin-top: 30px;
-  text-align: center; }
+  text-align: center;
+  font-weight: 300; }
 
 footer {
   padding: 100px;
@@ -242,3 +225,203 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+
+.grid {
+  height: 300px;
+  position: relative;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  list-style: none;
+  text-align: center; }
+
+/* Common style */
+.grid figure {
+  position: relative;
+  /*float: left;*/
+  overflow: hidden;
+  /*margin: 10px 1%;*/
+  height: 300px;
+  text-align: center;
+  cursor: pointer; }
+
+.grid figure img {
+  position: relative;
+  display: block;
+  opacity: 0.8; }
+
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none; }
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0; }
+
+figure.effect-bubba {
+  background: #000;
+  /* bg image stuff */
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100%;
+  background-size: cover;
+  flex-direction: column; }
+
+figure.effect-bubba img {
+  opacity: 1.0;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s; }
+
+figure.effect-bubba:hover img {
+  opacity: 0.4; }
+
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s; }
+
+figure.effect-bubba figcaption::before {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1); }
+
+figure.effect-bubba figcaption::after {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0); }
+
+figure.effect-bubba h2 {
+  padding-top: 70px;
+  font-size: 36px;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, -5px, 0);
+  transform: translate3d(0, -5px, 0); }
+
+figure.effect-bubba p {
+  padding: 20px 2.5em;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
+  font-weight: 300; }
+
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+
+figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* Color variables */
+/* Mixins */
+/* Ul styles */
+.icon-effect {
+  list-style: none;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 230px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .icon-effect span {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px; }
+
+/*
+* Icon styles
+*
+* There are styles for icon and everything which are connected with it.
+*/
+.icon {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #f1f1f1;
+  line-height: 52px;
+  text-align: center;
+  background-color: #4A4A4A; }
+
+.icon:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: '';
+  box-sizing: content-box; }
+
+/* Hover effect */
+.icon-effect .icon {
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s; }
+
+.icon-effect .icon:after {
+  top: -7px;
+  left: -7px;
+  padding: 7px;
+  box-shadow: 0 0 0 4px #f1f1f1;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0; }
+
+.icon-effect-1a .icon:hover {
+  background-color: #f1f1f1;
+  color: #4A4A4A; }
+
+.icon-effect-1a .icon:hover:after {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 1; }

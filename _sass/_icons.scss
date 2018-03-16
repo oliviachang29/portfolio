@@ -1,0 +1,92 @@
+
+/* Color variables */
+$main-color: #4A4A4A;
+$white-color: #f1f1f1;
+
+/* Mixins */
+
+@mixin transition-animation {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+@mixin transition-scale($scale){
+    -webkit-transform: scale($scale);
+    -moz-transform: scale($scale);
+    -ms-transform: scale($scale);
+    -o-transform: scale($scale);
+    transform: scale($scale);
+}
+
+/* Ul styles */
+.icon-effect { 
+  list-style: none; 
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 230px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  span {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/*
+* Icon styles
+*
+* There are styles for icon and everything which are connected with it.
+*/
+.icon {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: $white-color;
+  line-height: 52px;
+  text-align: center;
+  background-color: $main-color;
+}
+
+.icon:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+  }
+
+/* Hover effect */
+.icon-effect .icon {
+  @include transition-animation;
+}
+
+.icon-effect .icon:after {
+    top: -7px;
+    left: -7px;
+    padding: 7px;
+    box-shadow: 0 0 0 4px $white-color;
+   @include transition-animation; // mixins
+   @include transition-scale(.8); // mixins
+    opacity: 0;
+}
+
+.icon-effect-1a .icon:hover {
+    background-color: $white-color;
+    color: $main-color;
+}
+
+.icon-effect-1a .icon:hover:after {
+    @include transition-scale(1); // mixins
+    opacity: 1;
+}
