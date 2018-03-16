@@ -12,6 +12,8 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/main_css_file.css">
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+
 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
@@ -42,7 +44,7 @@
 
 	</div>
 </header>
-<section>
+<section data-aos="fade-up" data-aos-easing="ease-out">
 	<h2 id="expertise">Expertise</h2>
 	<div class="underline"></div>
 	<div class="expertise-row">
@@ -77,7 +79,7 @@
 		</div>
 	</div>
 </section>
-<section>
+<section data-aos="fade-up" data-aos-easing="ease-out">
 	<div id="work">
 		<h2>Work</h2>
 		<div class="underline"></div>
@@ -112,7 +114,7 @@
 		</div>
 	</div>
 </section>
-<section>
+<section data-aos="fade-up" data-aos-easing="ease-out">
 	<div id="work">
 		<h2>Skills</h2>
 		<div class="underline"></div>
@@ -122,8 +124,14 @@
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script type="text/javascript" src="//cdn.rawgit.com/icons8/bower-webicon/v0.10.7/jquery-webicon.min.js"></script>
-<footer>
+  <script src="bower_components/aos/dist/aos.js"></script>
+
+<footer data-aos="fade-up" data-aos-easing="ease-out">
 	<div class="underline"></div>
 	<div class="footer-text" id="footer-copyright">&#xa9; <script>document.write(new Date().getFullYear())</script> Olivia Chang. All rights reserved.</div>
 </footer>
+
+  <script>
+    AOS.init();
+  </script>
 </html>
