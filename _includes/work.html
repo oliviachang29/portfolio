@@ -1,60 +1,24 @@
 <section data-aos="fade-up" data-aos-easing="ease-out">
 	<div id="work">
-		<h2>Work</h2>
+		<h2>work</h2>
 		<div class="underline"></div>
 	</div>
 
 	<div class="row">
-		<div class="col-md-6" data-aos="fade-up" data-aos-easing="ease-out">
-			<a href="https://www.hellomere.com">
-				<div class="grid">
-					<figure class="effect-bubba" id="mere">
-						<figcaption>
-							<h2>Mere</h2>
-							<p>Congressional App Challenge winner</p>
-						</figcaption>			
-					</figure>
-				</div>
-			</a>
-		</div>
-
-		<div class="col-md-6" data-aos="fade-up" data-aos-easing="ease-out">
-			<a href="https://readlio.com">
-				<div class="grid">
-					<figure class="effect-bubba grid-right" id="readlio">
-						<figcaption>
-							<h2>Readlio</h2>
-							<p>Academic reading log with 2700+ users</p>
-						</figcaption>			
-					</figure>
-				</div>
-			</a>
-		</div>
-
-		<div class="col-md-6" data-aos="fade-up" data-aos-easing="ease-out">
-			<a href="https://studyguides.science">
-				<div class="grid">
-					<figure class="effect-bubba grid-bottom" id="studyguides">
-						<figcaption>
-							<h2>studyguides.<br class="visible-xs">science</h2>
-							<p class="hidden-xs">Biology and chemistry notes</p>
-						</figcaption>			
-					</figure>
-				</div>
-			</a>
-		</div>
-
-		<div class="col-md-6" data-aos="fade-up" data-aos-easing="ease-out">
-			<a href="https://windup.top">
-				<div class="grid">
-					<figure class="effect-bubba grid-bottom" id="windup">
-						<figcaption>
-							<h2>Windup</h2>
-							<p>Store and play figure skating routines</p>
-						</figcaption>			
-					</figure>
-				</div>
-			</a>
-		</div>
+		{% for project in site.projects %}   
+		    <div class="col-md-6" data-aos="fade-up" data-aos-easing="ease-out">
+				<a href="{{ project.link }}">
+					<div class="grid">
+						<figure class="effect-bubba" style="background-image: url('{{project.image-url}}')">
+							<figcaption>
+								<h2>{{ project.title }}</h2>
+								<p>{{ project.description }}</p>
+							</figcaption>			
+						</figure>
+					</div>
+				</a>
+			</div>
+		{% endfor %}
 	</div>
+
 </section>

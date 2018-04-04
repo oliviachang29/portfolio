@@ -77,13 +77,15 @@ section {
   to {
     opacity: 1; } }
 header {
-  background-image: url("/assets/images/header.jpg");
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   position: relative; }
+
+#home-header {
+  background-image: url("/assets/images/header.jpg"); }
 
 .add-border {
   width: 90%;
@@ -107,6 +109,10 @@ header {
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 50px; }
+
+#bio-text {
+  text-align: center;
+  margin-top: 30px; }
 
 .expertise-row {
   margin: 0 auto;
@@ -179,11 +185,13 @@ header {
 #work {
   /*margin-bottom: 50px;*/ }
 
-.button-container {
-  display: flex; }
+.position {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 40px; }
 
 #contact-btn {
-  margin: 0 auto;
   padding: 15px 30px;
   border: 1px solid black;
   border-radius: 100px;
@@ -195,8 +203,7 @@ header {
   /*make sure to use same height/width as in the html*/
   width: 200;
   height: 60px;
-  display: inline-block;
-  margin-left: 25%; }
+  display: inline-block; }
 
 #shape {
   stroke-width: 5px;
@@ -239,12 +246,17 @@ a {
     text-decoration: none; }
 
 #footer-copyright {
-  margin-top: 30px;
+  /*margin-top: 30px;*/
   text-align: center;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #DBDBDB; }
+
+#footer-underline {
+  background-color: #DBDBDB;
+  margin-bottom: 1em; }
 
 footer {
-  padding: 100px;
+  padding: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -452,3 +464,21 @@ figure.effect-bubba:hover p {
   -o-transform: scale(1);
   transform: scale(1);
   opacity: 1; }
+
+#project-header {
+  width: 90%;
+  height: 40%;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column; }
+
+#project-title {
+  color: #fff;
+  font-size: 48px; }
+
+#project-description {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 10px; }

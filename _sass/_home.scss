@@ -1,11 +1,14 @@
 header {
-  background-image: url("/assets/images/header.jpg");
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   position: relative
+}
+
+#home-header {
+	background-image: url("/assets/images/header.jpg");
 }
 
 .add-border {
@@ -34,6 +37,11 @@ header {
 	margin: 0 auto;
 	margin-top: 30px;
 	margin-bottom: 50px;
+}
+
+#bio-text {
+	text-align: center;
+	margin-top: 30px;
 }
 
 
@@ -131,12 +139,14 @@ header {
 	/*margin-bottom: 50px;*/
 }
 
-.button-container {
-	display: flex;
+.position {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 40px;
 }
 
 #contact-btn {
-	margin: 0 auto;
 	padding: 15px 30px;
 	border: 1px solid black;
 	border-radius: 100px;
@@ -146,13 +156,10 @@ header {
 }
 
 .svg-wrapper {
-  
   /*make sure to use same height/width as in the html*/
   width: 200;
   height: 60px;
   display: inline-block;
-
-  margin-left: 25%;
 }
 
 #shape {

@@ -30,7 +30,7 @@
 </head>
 
 	<body>
-		<header class="add-border vertical-center header-border">
+		<header class="add-border vertical-center header-border" id="home-header">
 	<div class="content">
 		<div id="logo">
 			<h1 id="name">Olivia Chang</h1>
@@ -46,13 +46,18 @@
 
 	</div>
 </header>
+<section id="bio">
+	<h2 id="bio">bio</h2>
+	<div class="underline"></div>
+	<p id="bio-text" class="description">Hi! I'm Olivia. I'm a software developer and graphic designer with a passion for all things technology.</p>
+</section>
 <section data-aos="fade-up" data-aos-easing="ease-out">
-	<h2 id="expertise">Expertise</h2>
+	<h2 id="expertise">expertise</h2>
 	<div class="underline"></div>
 	<div class="expertise-row">
 		<div class="expertise-box">
 			<img class="expertise-img" src="/assets/images/icons8-diamond-100.png" width="50px">
-			<p class="title">Design</p>
+			<p class="title">design</p>
 			<p class="description">I use Illustrator, Photoshop, and Sketch in the design process.</p>
 		</div>
 		<div class="dot-box">
@@ -64,7 +69,7 @@
 		</div>
 		<div class="expertise-box">
 			<img class="expertise-img" src="/assets/images/icons8-code-100.png" width="50px">
-			<p class="title">Websites</p>
+			<p class="title">websites</p>
 			<p class="description">I use Ruby on Rails and Jekyll along with HTML, CSS, JS and host on Heroku.</p>
 		</div>
 		<div class="dot-box">
@@ -76,70 +81,73 @@
 		</div>
 		<div class="expertise-box">
 			<img class="expertise-img" src="/assets/images/icons8-iphone-80.png" width="60px">
-			<p class="title">Mobile apps</p>
+			<p class="title">mobile apps</p>
 			<p class="description">I use React Native and Corona SDK to create iOS and Android apps.</p>
 		</div>
 	</div>
 </section>
 <section data-aos="fade-up" data-aos-easing="ease-out">
 	<div id="work">
-		<h2>Work</h2>
+		<h2>work</h2>
 		<div class="underline"></div>
 	</div>
 
 	<div class="row">
-		<div class="col-md-6" data-aos="fade-up" data-aos-easing="ease-out">
-			<a href="https://www.hellomere.com">
-				<div class="grid">
-					<figure class="effect-bubba" id="mere">
-						<figcaption>
-							<h2>Mere</h2>
-							<p>Congressional App Challenge winner</p>
-						</figcaption>			
-					</figure>
-				</div>
-			</a>
-		</div>
-
-		<div class="col-md-6" data-aos="fade-up" data-aos-easing="ease-out">
-			<a href="https://readlio.com">
-				<div class="grid">
-					<figure class="effect-bubba grid-right" id="readlio">
-						<figcaption>
-							<h2>Readlio</h2>
-							<p>Academic reading log with 2700+ users</p>
-						</figcaption>			
-					</figure>
-				</div>
-			</a>
-		</div>
-
-		<div class="col-md-6" data-aos="fade-up" data-aos-easing="ease-out">
-			<a href="https://studyguides.science">
-				<div class="grid">
-					<figure class="effect-bubba grid-bottom" id="studyguides">
-						<figcaption>
-							<h2>studyguides.<br class="visible-xs">science</h2>
-							<p class="hidden-xs">Biology and chemistry notes</p>
-						</figcaption>			
-					</figure>
-				</div>
-			</a>
-		</div>
-
-		<div class="col-md-6" data-aos="fade-up" data-aos-easing="ease-out">
-			<a href="https://windup.top">
-				<div class="grid">
-					<figure class="effect-bubba grid-bottom" id="windup">
-						<figcaption>
-							<h2>Windup</h2>
-							<p>Store and play figure skating routines</p>
-						</figcaption>			
-					</figure>
-				</div>
-			</a>
-		</div>
+		   
+		    <div class="col-md-6" data-aos="fade-up" data-aos-easing="ease-out">
+				<a href="https://hellomere.com">
+					<div class="grid">
+						<figure class="effect-bubba" style="background-image: url('http://hellomere.com/uploads/1/3/9/3/13937089/background-images/1402241652.jpg')">
+							<figcaption>
+								<h2>mere</h2>
+								<p>2017 Congressional App Challenge winner</p>
+							</figcaption>			
+						</figure>
+					</div>
+				</a>
+			</div>
+		   
+		    <div class="col-md-6" data-aos="fade-up" data-aos-easing="ease-out">
+				<a href="https://readlio.com">
+					<div class="grid">
+						<figure class="effect-bubba" style="background-image: url('/assets/images/readlio.png')">
+							<figcaption>
+								<h2>readlio</h2>
+								<p>academic reading log with 2700+ users</p>
+							</figcaption>			
+						</figure>
+					</div>
+				</a>
+			</div>
+		   
+		    <div class="col-md-6" data-aos="fade-up" data-aos-easing="ease-out">
+				<a href="https://studyguides.science">
+					<div class="grid">
+						<figure class="effect-bubba" style="background-image: url('/assets/images/studyguides.png')">
+							<figcaption>
+								<h2>studyguides</h2>
+								<p>biology and chemistry notes</p>
+							</figcaption>			
+						</figure>
+					</div>
+				</a>
+			</div>
+		   
+		    <div class="col-md-6" data-aos="fade-up" data-aos-easing="ease-out">
+				<a href="https://windup.top">
+					<div class="grid">
+						<figure class="effect-bubba" style="background-image: url('/assets/images/windup.png')">
+							<figcaption>
+								<h2>windup</h2>
+								<p>store and play figure skating routines</p>
+							</figcaption>			
+						</figure>
+					</div>
+				</a>
+			</div>
+		
 	</div>
+
 </section>
 <!-- <section data-aos="fade-up" data-aos-easing="ease-out">
 	<div id="work">
@@ -147,37 +155,30 @@
 		<div class="underline"></div>
 	</div>
 </section> -->
-<!-- <section>
-	<h2>Want to get in touch?</h2>
+<section>
 
-	<div class="row">
-		<div class="col-md-4"></div>
-		<div class="col-md-4">
-			<a href="mailto:hello@oliviachang.me">
-			<div class="svg-wrapper">
-				<svg height="60" width="200" xmlns="http://www.w3.org/2000/svg">
-					<rect id="shape" height="60" width="200" />
-					<div id="text">
-						<span class="spot"></span><p>contact me</p>
-					</div>
-				</svg>
-			</div>
-			</a>
+	<div class="position">
+		<a href="mailto:hello@oliviachang.me">
+		<div class="svg-wrapper">
+			<svg height="60" width="200" xmlns="http://www.w3.org/2000/svg">
+				<rect id="shape" height="60" width="200" />
+				<div id="text">
+					<span class="spot"></span><p>get in touch</p>
+				</div>
+			</svg>
 		</div>
-		<div class="col-md-4"></div>
+		</a>
 	</div>
-</section> -->
+</section>
 	</body>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="bower_components/aos/dist/aos.js"></script>
+<script src="bower_components/aos/dist/aos.js"></script>
 
 <footer>
-	<div class="underline"></div>
+	<div id="footer-underline" class="underline"></div>
 	<div class="footer-text" id="footer-copyright">&#xa9; <script>document.write(new Date().getFullYear())</script> Olivia Chang. All rights reserved.</div>
 </footer>
 
-  <script>
-    AOS.init();
-  </script>
+ <script>AOS.init();</script>
 </html>
