@@ -6,7 +6,7 @@ html, body {
   margin: 0; }
 
 * {
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; }
+  font-family: SF Pro Display,Helvetica Neue,Helvetica,Arial,sans-serif; }
 
 section {
   min-height: 100%; }
@@ -17,10 +17,20 @@ section {
   justify-content: center;
   text-align: center; }
 
+.noselect {
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */ }
+
 #logo {
   width: 250px;
   min-height: 130px;
-  background: #000;
+  background: #0F0F0F;
   padding: 20px 10px;
   z-index: 100;
   position: absolute;
@@ -42,15 +52,7 @@ section {
   background-color: #1F1F1F;
   display: flex;
   flex-direction: row;
-  overflow: hidden;
-  -webkit-user-select: none;
-  /* Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE10+/Edge */
-  user-select: none;
-  /* Standard */ }
+  overflow: hidden; }
 
 .name-art {
   opacity: 0.08;
@@ -78,18 +80,18 @@ section {
   margin: 0 auto; }
 
 #about {
-  min-height: 80%;
-  padding-top: 200px;
+  min-height: 100%;
+  padding-top: 10%;
   z-index: 1000; }
 
 .hi {
   /* Hi! I’m Olivia.: */
-  width: 70%;
+  width: 75%;
   margin: 0 auto; }
 
 .hi p {
   opacity: 0.2;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 64px;
   color: #000000;
   letter-spacing: -2.4px;
@@ -98,15 +100,15 @@ section {
 .what-i {
   opacity: 0.7;
   font-weight: bold;
-  font-size: 34px;
+  font-size: 30px;
   color: #000000;
   letter-spacing: -1.27px;
   line-height: 0; }
 
 .verb {
-  /* make.: */
+  /*font-family: ;*/
   font-weight: bold;
-  font-size: 107.52px;
+  font-size: 100px;
   color: #000000;
   letter-spacing: -4.03px;
   line-height: 65px;
@@ -114,12 +116,8 @@ section {
 
 .column ul {
   list-style-type: none;
-  font-weight: 300;
   padding-left: 5px;
-  font-size: 24px;
-  color: #000000;
-  letter-spacing: 0;
-  line-height: 36px; }
+  line-height: 30px; }
 
 .background {
   position: absolute;
@@ -133,21 +131,21 @@ section {
   font-size: 107.52px;
   color: #000000;
   letter-spacing: -4.03px;
-  margin: 5%; }
+  /*margin: 5%;*/ }
 
 #mere {
   display: flex;
   flex-direction: row; }
 
+.rect {
+  height: 550px;
+  width: 40%; }
+
 .mere-rect {
-  height: 600px;
-  width: 40%;
   background-color: #F6E3EA; }
 
 .readlio-rect {
-  height: 600px;
   float: right;
-  width: 40%;
   background-color: #CAE5E9;
   clip-path: inset(-100vw 0 -100vw -100vw); }
 
@@ -163,11 +161,9 @@ section {
   /*margin-left: -200px;*/ }
 
 .project-text {
-  align-self: center;
-  margin-left: 10%; }
-
-#project-text-readlio {
-  margin-top: 0px; }
+  /*align-self: center;*/
+  margin-left: 10%;
+  margin-top: 5%; }
 
 .project-title {
   font-weight: bold;
@@ -176,18 +172,27 @@ section {
   letter-spacing: -4.03px; }
 
 .project-desc {
-  /* I designed and progr: */
   /*font-family: Balto-Book;*/
-  font-weight: 300;
-  font-size: 20px;
+  font-size: 20px !important;
   color: #000000;
-  letter-spacing: 0;
   line-height: 34px;
   width: 70%; }
 
 #project-desc-readlio {
   width: 40%; }
 
+@font-face {
+  font-family: SF Pro Display;
+  font-weight: bold;
+  src: url("/assets/fonts/SF-Pro-Display-Bold.otf"); }
+@font-face {
+  font-family: SF Pro Display;
+  font-weight: normal;
+  src: url("/assets/fonts/SF-Pro-Display-Regular.otf"); }
+@font-face {
+  font-family: SF Pro Display;
+  font-weight: 400;
+  src: url("/assets/fonts/SF-Pro-Display-Semibold.otf"); }
 h1 {
   font-weight: 500;
   font-size: 20px;
@@ -199,6 +204,12 @@ h2 {
 span {
   font-size: 16px;
   font-weight: 200; }
+
+.text {
+  font-weight: 500;
+  font-size: 20px;
+  color: #4A4A4A;
+  letter-spacing: 0; }
 
 a {
   color: inherit;
