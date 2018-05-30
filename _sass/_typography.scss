@@ -6,14 +6,14 @@
 
 @font-face {
    font-family: SF Pro Display;
-   font-weight: normal;
+   font-weight: 300;
    src: url('/assets/fonts/SF-Pro-Display-Regular.otf');
 } 
 
 @font-face {
    font-family: SF Pro Display;
-   font-weight: 400;
-   src: url('/assets/fonts/SF-Pro-Display-Semibold.otf');
+   font-weight: 100;
+   src: url('/assets/fonts/SF-Pro-Display-Light.otf');
 } 
 
 
@@ -33,7 +33,7 @@ span {
 }
 
 .text {
-	font-weight: 500;
+	font-weight: 400;
 	font-size: 20px;
   color: #4A4A4A;
   letter-spacing: 0;
@@ -45,4 +45,8 @@ a {
 	&:hover {
 		text-decoration: none;
 	}
+}
+
+span {
+	
 }

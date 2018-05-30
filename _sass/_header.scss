@@ -1,0 +1,68 @@
+#logo {
+  width: 250px;
+  background: #0F0F0F;
+  padding: 50px 10px 0px;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 300px 0px 0px 10px;
+  /* p */
+  font-weight: bold;
+  font-size: 67.2px;
+  color: #FFFFFF;
+  letter-spacing: -2.52px;
+  line-height: 10px;
+}
+
+#logo p {
+  margin: 0px 0px 50px;
+}
+
+#header {
+  width: 95%;
+  height: 100%;
+  z-index: 0;
+  margin: 0 auto;
+  background-color: #1F1F1F;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.name-art {
+  opacity: 0.08;
+  font-weight: bold;
+  font-size: 400px;
+  color: #FFFFFF;
+  /*margin-top: 100px;*/
+  letter-spacing: -16.93px;
+  /*line-height: -10px;*/
+  margin-right: 50px;
+  align-self: flex-end;
+}
+.name-art p {
+  margin-top: -280px;
+  margin-bottom: 0px;
+}
+.name-art-top {
+  margin-top: 100px !important;
+}
+.desc-words {
+  opacity: 0.8;
+  font-weight: bold;
+  font-size: 107.52px;
+  color: #FFFFFF;
+  letter-spacing: -4.03px; 
+  line-height: 0px;
+  align-self: center;
+
+}
+
+.desc-words-top {
+  margin-top: 100px !important;
+}
+
+.desc-words p {
+  margin-top: -20px;
+}

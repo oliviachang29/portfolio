@@ -1,0 +1,60 @@
+.row-container {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+#about {
+  padding-top: 100px;
+  z-index: 1000;
+}
+
+.h2 {
+  /* Hi! I’m Olivia.: */
+  width: 75%;
+  margin: 0 auto;
+}
+
+.h2 p {
+  opacity: 0.2;
+  font-weight: 600;
+  font-size: 64px;
+  color: #000000;
+  letter-spacing: -2.4px;
+  margin-bottom: 40px;
+}
+
+.what-i {
+  opacity: 0.7;
+  font-weight: bold;
+  font-size: 30px;
+  color: #000000;
+  letter-spacing: -1.27px;
+  line-height: 0;
+}
+
+.verb {
+  /*font-family: ;*/
+  font-weight: bold;
+  font-size: 100px;
+  color: #000000;
+  letter-spacing: -4.03px;
+  line-height: 0px;
+  margin: 40px 0px 55px;
+}
+
+.column ul {
+  list-style-type: none;
+  padding-left: 5px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  margin-top: -50%;
+  z-index: 0;
+}
