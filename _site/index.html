@@ -10,7 +10,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
 
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="/assets/css/main_css_file.css">
   <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
 
@@ -38,11 +38,11 @@
 	</div>
 </div>
 <section id="about">
-	<div class="h2">
+	<div class="h2 hidden-xs">
 		<p>Hi there. I'm Olivia.</p>
 	</div>
-	<div class="row-container">
-		<div class="column" data-aos="fade">
+	<div class="row row-container">
+		<div class="column col-sm-4" data-aos="fade">
 			<p class="what-i">what i</p>
 			<p class="verb">code.</p>
 			<ul>
@@ -51,7 +51,7 @@
 				<li class="text">full stack</li>
 			</ul>
 		</div>
-		<div class="column" data-aos="fade" data-aos-delay="1000">
+		<div class="column col-sm-4" data-aos="fade" data-aos-delay="1000">
 			<p class="what-i">what i</p>
 			<p class="verb">make.</p>
 			<ul>
@@ -60,7 +60,7 @@
 				<li class="text">web apps</li>
 			</ul>
 		</div>
-		<div class="column" data-aos="fade" data-aos-delay="2000">
+		<div class="column col-sm-4" data-aos="fade" data-aos-delay="2000">
 			<p class="what-i">what i</p>
 			<p class="verb">use.</p>
 			<ul>
@@ -73,10 +73,15 @@
 </section>
 <!-- <canvas class="background"></canvas> -->
 <!-- MERE -->
+<div class="visible-xs visible-sm">
+	<div class="project-img-mobile-rect mere-rect""></div>
+	<img src="/assets/images/mere.png" class="project-img-mobile">
+</div>
+
 <section class="project-section project-section-left" id="mere">
-	<div class="rect" id="mere-rect">
+	<div class="hidden-xs hidden-sm rect mere-rect">
 		<a href="https://hellomere.com">
-			<img src="/assets/images/mere.png" class="project-img project-img-left project-img-phone rellax" data-rellax-speed="4">
+			<img src="/assets/images/mere.png" class="hidden-sm hidden-xs project-img project-img-left project-img-phone rellax" data-rellax-speed="4">
 		</a>
 	</div>
 	<div class="project-text">
@@ -88,10 +93,15 @@
 </section>
 
 <!-- READLIO -->
+<div class="visible-xs visible-sm">
+	<div class="project-img-mobile-rect readlio-rect"></div>
+	<img src="/assets/images/readlio-mobile.png" class="visible-xs visible-sm project-img-mobile project-img-mobile-comp">
+</div>
+
 <section class="project-section project-section-right" id="readlio">
-	<div class="rect right-rect" id="readlio-rect">
+	<div class="hidden-xs hidden-sm rect right-rect readlio-rect">
 		<a href="https://readlio.com">
-			<img src="/assets/images/readlio.png" class="project-img computer-img rellax" data-rellax-speed="3">
+			<img src="/assets/images/readlio.png" class="hidden-sm hidden-xs project-img computer-img rellax" data-rellax-speed="3">
 		</a>
 	</div>
 	<div class="project-text">
@@ -103,10 +113,15 @@
 </section>
 
 <!-- WINDUP -->
+<div class="visible-xs visible-sm">
+	<div class="project-img-mobile-rect windup-rect"></div>
+	<img src="/assets/images/windup.png" class="visible-xs visible-sm project-img-mobile">
+</div>
+
 <section class="project-section project-section-left" id="windup">
-	<div class="rect" id="windup-rect">
+	<div class="hidden-xs hidden-sm rect windup-rect">
 		<a href="https://windup.top">
-			<img src="/assets/images/windup.png" id="windup-img" class="project-img project-img-left project-img-phone rellax" data-rellax-speed="3">
+			<img src="/assets/images/windup.png" id="windup-img" class="hidden-sm hidden-xs project-img project-img-left project-img-phone rellax" data-rellax-speed="3">
 		</a>
 	</div>
 	
@@ -119,10 +134,15 @@
 </section>
 
 <!-- ZAPATA -->
+<div class="visible-xs visible-sm">
+	<div class="project-img-mobile-rect zapata-rect"></div>
+	<img src="/assets/images/zapata-mobile.png" class="visible-xs visible-sm project-img-mobile project-img-mobile-comp">
+</div>
+
 <section class="project-section project-section-right" id="zapata">
-	<div class="rect right-rect" id="zapata-rect">
+	<div class="hidden-xs hidden-sm rect right-rect zapata-rect">
 		<a href="https://zapata.oliviachang.me">
-			<img src="/assets/images/zapata.png" class="project-img computer-img rellax" id="zapata-img" data-rellax-speed="3">
+			<img src="/assets/images/zapata.png" class="hidden-sm hidden-xs project-img computer-img rellax" id="zapata-img" data-rellax-speed="3">
 		</a>
 	</div>
 	<div class="project-text">
@@ -134,10 +154,15 @@
 </section>
 
 <!-- STUDYGUIDES -->
+<div class="visible-xs visible-sm">
+	<div class="project-img-mobile-rect studyguides-rect"></div>
+	<img src="/assets/images/studyguides-mobile.png" class="visible-xs visible-sm project-img-mobile project-img-mobile-comp">
+</div>
+
 <section class="project-section project-section-left" id="studyguides">
-	<div class="rect" id="studyguides-rect">
+	<div class="hidden-xs hidden-sm rect studyguides-rect">
 		<a href="https://studyguides.science">
-			<img src="/assets/images/studyguides.png" id="studyguides-img" class="project-img project-img-left rellax" data-rellax-speed="3">
+			<img src="/assets/images/studyguides.png" id="studyguides-img" class="hidden-sm hidden-xs project-img project-img-left rellax" data-rellax-speed="3">
 		</a>
 	</div>
 	
@@ -149,17 +174,25 @@
 	</div>
 	
 </section>
-<div class="h2 get-in-touch">
-	<p>get in touch.</p>
-</div>
-<div class="links">
-	<a href="mailto:hello@oliviachang.me"><span class="underline">email.</span></a>
-	<a href="https://github.com/oliviachang29"><span class="underline">github.</span></a>
-	<a href="https://www.linkedin.com/in/oliviazyc/"><span class="underline">linkedin.</span></a>
-</div>
-
-<p class="copyright">(c)<script>document.write(new Date().getFullYear())</script> Olivia Chang. All rights reserved.</p>
-
+<footer>
+	<div class="h2 get-in-touch hidden-xs">
+		<p>get in touch.</p>
+	</div>
+	<div class="links">
+		<div class="row">
+			<div class="col-sm-4">
+				<a href="mailto:hello@oliviachang.me"><span class="underline">email.</span></a>
+			</div>
+			<div class="col-sm-4">
+				<a href="https://github.com/oliviachang29"><span class="underline">github.</span></a>
+			</div>
+			<div class="col-sm-4">
+				<a href="https://www.linkedin.com/in/oliviazyc/"><span class="underline">linkedin.</span></a>
+			</div>
+		</div>
+	</div>
+	<p class="copyright">(c)<script>document.write(new Date().getFullYear())</script> Olivia Chang. All rights reserved.</p>
+</footer>
 	</body>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
@@ -167,7 +200,9 @@
 <script src="bower_components/rellax/rellax.min.js"></script>
 
 <script>
-  AOS.init();
+  AOS.init({
+    disable: 'mobile'
+  });
   var rellax = new Rellax('.rellax');
 </script>
 

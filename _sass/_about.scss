@@ -1,8 +1,26 @@
-.row-container {
-  display: flex;
-  flex-direction: row;
+#about {
+  margin: 0 auto;
   width: 75%;
-  justify-content: space-between;
+
+  @media only screen and (max-width : 1200px) {
+    width: 85%;
+  }
+
+  @media only screen and (max-width : 992px) {
+    width: 100%;
+    padding-left: 30px
+  }
+
+  @media only screen and (max-width : 768px) {
+    padding-left: 25vw
+  }
+
+  @media only screen and (max-width : 480px) {
+    padding-left: 15vw
+  }
+}
+
+.row-container {
   margin: 0 auto;
 }
 
@@ -13,7 +31,7 @@
 
 .h2 {
   /* Hi! I’m Olivia.: */
-  width: 75%;
+  /*width: 75%;*/
   margin: 0 auto;
 }
 
@@ -39,10 +57,19 @@
   /*font-family: ;*/
   font-weight: bold;
   font-size: 100px;
-  color: #000000;
   letter-spacing: -4.03px;
   line-height: 0px;
+  color: #000000;
   margin: 40px 0px 55px;
+  @media only screen and (min-width : 768px) and (max-width : 992px) {
+    font-size: 85px;
+    letter-spacing: -2.03px;
+  }
+}
+
+.column {
+  padding: 0px;
+  padding-right: 30px;
 }
 
 .column ul {
@@ -50,6 +77,7 @@
   padding-left: 5px;
   line-height: 30px;
   font-weight: normal;
+  margin: 50px 0px;
 }
 
 .background {
