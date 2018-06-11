@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body {
   height: 100%;
   width: 100%;
@@ -179,12 +178,10 @@ a {
   margin: 0 auto; }
 
 #about {
-  padding-top: 100px;
-  z-index: 1000; }
+  padding-top: 10%;
+  min-height: 100%; }
 
 .h2 {
-  /* Hi! I’m Olivia.: */
-  /*width: 75%;*/
   margin: 0 auto; }
 
 .h2 p {
@@ -365,7 +362,7 @@ a {
 footer {
   width: 75%;
   margin: 0 auto;
-  padding: 10% 0;
+  padding: 10% 0 5%;
   min-height: 0px; }
 
 .links {
@@ -399,7 +396,7 @@ footer {
 
 .copyright {
   text-align: center;
-  margin: 20% 0px 10%;
+  margin: 20% 0px 0px;
   opacity: 0.1;
   font-weight: bold;
   font-size: 20px !important;
