@@ -8,5 +8,5 @@
 	{"id": 6, "name":"Chiaroscuro","desc":"You're basically an art historian now.","normalColor":"#FFFFFF","normalTextColor":"#000000","tuneColor":"#000000","tuneTextColor":"#FFFFFF"},
 	{"id": 7, "name":"Hamilton","desc":"#YayHamlet.","normalColor":"#232122","normalTextColor":"#FFFFFF","tuneColor":"#C18430","tuneTextColor":"#FFFFFF"},
 	{"id": 8, "name":"Generic \"Western\" Country","desc":"Britain, France, Murica, your choice.","normalColor":"#002768","normalTextColor":"#FFFFFF","tuneColor":"#BF0A30","tuneTextColor":"#FFFFFF"},
-	{"id": 90, "name":"Blood of Angry Men","desc":"Vive la France!","normalColor":"#191919","normalTextColor":"#FFFFFF","tuneColor":"#E53A40","tuneTextColor":"#FFFFFF"},
+	{"id": 9, "name":"Blood of Angry Men","desc":"Vive la France!","normalColor":"#191919","normalTextColor":"#FFFFFF","tuneColor":"#E53A40","tuneTextColor":"#FFFFFF"},
 ]
