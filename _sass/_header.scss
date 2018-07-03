@@ -7,7 +7,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  margin: 0px 0px 0px 10px;
   /* p */
   font-weight: bold;
   font-size: 67.2px;
@@ -17,10 +16,6 @@
 
   @media only screen and (min-width : 320px) {
     margin-top: 50px
-  }
-
-  @media only screen and (min-width : 992px) {
-    margin-top: 300px;
   }
 }
 
@@ -38,6 +33,9 @@
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
+  @media only screen and (max-width : 992px) {
+    display: none;
+  }
 }
 
 .name-art {
@@ -80,7 +78,7 @@
   line-height: 80px;
   letter-spacing: -4.03px; 
   color: #FFFFFF;
-  margin-top: 10%;
+  /*margin-top: 10%;*/
   align-self: center;
   @media only screen and (max-width : 1200px) {
     margin-left: -80px;

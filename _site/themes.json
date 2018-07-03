@@ -1,7 +1,0 @@
-[
-	{"id": 0, "name":"Light","desc":"Minimalistic and bland.","normalColor":"#F7F7F7","normalTextColor":"#000000","tuneColor":"#57BA85","tuneTextColor":"#FFFFFF"},
-	{"id": 1, "name":"Dark","desc":"Somewhat emo.","normalColor":"#080808","normalTextColor":"#FFFFFF","tuneColor":"#57BA85","tuneTextColor":"#FFFFFF"},
-	{"id": 2, "name":"Star Wars","desc":"The Force is strong with this one.","normalColor":"#080808","normalTextColor":"#FFFFFF","tuneColor":"#FFE918","tuneTextColor":"#000000"},
-	{"id": 3, "name":"Cheeto-In-Chief","desc":"You know who I'm talking about.","normalColor":"#FC5E02","normalTextColor":"#FFFFFF","tuneColor":"#FFC703","tuneTextColor":"#000000"},
-	{"id": 4, "name":"Ravenclaw","desc":"Because we're smarter.","normalColor":"#F7F7F7","normalTextColor":"#000000","tuneColor":"#004E80","tuneTextColor":"#FFFFFF"}
-]
