@@ -1,0 +1,101 @@
+@import "variables";
+
+.project {
+	display: flex;
+	flex-direction: row;
+	border-top: 1px solid #F0F0F0;
+	/*margin-bottom: 30px;*/
+	img {
+		@include smooth-transition;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.project-last {
+	border-bottom: 1px solid #F0F0F0;
+}
+
+/* make image small when hover */
+.project-link:hover .project {
+	img {
+		-webkit-transform:scale(1.02);
+	    -moz-transform:scale(1.02);
+	    -ms-transform:scale(1.02);
+	    -o-transform:scale(1.02);
+	     transform:scale(1.02);
+	}
+}
+
+.project-link:hover .project-index {
+	color: #000000;
+}
+
+.project-link:hover .project-desc {
+	color: #4A4A4A;
+}
+
+.project-image-frame {
+	overflow: hidden;
+	width: 55%;
+	height: 512px;
+}
+
+.project-type-spacer {
+	margin-bottom: 30px;
+}
+
+.project-type {
+	/* hide in mobile*/
+	@media (max-width: $sm) {
+		display: none;
+	}
+
+	width: $left-padding;
+	padding-top: 20px;
+
+	p {
+		font-size: 14px;
+		transform: rotate(90deg);
+	}
+}
+
+.project-info {
+	padding: 20px 50px 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.project-index {
+	@include smooth-transition;
+	font-family: Apercu-Mono;
+	font-size: 24px;
+	color: #6D6D6D;
+}
+
+.project-title {
+	@include smooth-transition;
+	font-family: ApercuPro-Regular;
+	font-size: 48px;
+	color: #000000;
+	/*color: #6D6D6D;*/
+	margin-top: 60px;
+}
+
+.project-desc {
+	@include smooth-transition;
+	font-family: ApercuPro-Light;
+	margin-top: 10px;
+	font-size: 18px;
+	color: #6D6D6D;
+	line-height: 30px;
+	width: 200px;
+	@media (min-width: $md) {
+		width: 300px;
+	}
+}
+
+.project-language {
+	margin-top: auto;
+}

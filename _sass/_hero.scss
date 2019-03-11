@@ -1,0 +1,22 @@
+@import "variables";
+#hero {
+	@media (max-width: $sm) {
+		margin: 200px auto 200px $left-padding;
+	}
+
+	margin: 7.5% auto 10% $left-padding;
+	h1 {
+		font-family: ApercuPro-Bold;
+		font-size: 48px;
+		color: #000000;
+	}
+	p {
+		font-family: ApercuPro-Light;
+		font-size: 20px;
+		color: #6D6D6D;
+		margin-top: 10px;
+		@media (min-width: $md) {
+			margin-top: 23px;
+		}
+	}
+}

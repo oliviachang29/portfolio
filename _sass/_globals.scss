@@ -1,3 +1,4 @@
+@import "variables";
 html, body {
 	height: 100%;
   width: 100%;
@@ -6,26 +7,24 @@ html, body {
 }
 
 * {
-  font-family: SF Pro Display,Helvetica Neue,Helvetica,Arial,sans-serif;
-}
-
-section {
-  @media only screen and (min-width : 992px) {
-    min-height: 600px;
-  }
-}
-
-.vertical-center {
-	display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  font-family: Apercu Pro, Apercu-Mono
+  , Graphik, Lato, Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .noselect {
-  -webkit-user-select: none; /* Safari */        
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
 
+a {
+  @include smooth-transition;
+	&:hover {
+		color: #000000;
+		text-decoration: none;
+	}
+}

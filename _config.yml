@@ -1,9 +1,8 @@
 title: Olivia Chang
-description: >
-  Designer and developer.
+description: Developer, designer, student, and major nerd.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.oliviachang.me" # the base hostname & protocol for your site, e.g. http://example.com
-
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+email: "hello@oliviachang.me"
 # Build settings
 markdown: kramdown
 theme: minima
@@ -12,3 +11,9 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+collections:
+  projects:
+    title: Project
+    output: true
+    permalink: "/:title"
+    layout: project

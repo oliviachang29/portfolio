@@ -1,94 +1,31 @@
-.container {
-  margin: 0 auto;
-  width: 75%;
-
-  @media only screen and (max-width : 1200px) {
-    width: 85%;
-  }
-
-  @media only screen and (max-width : 992px) {
-    width: 100%;
-    padding-left: 30px
-  }
-
-  @media only screen and (max-width : 768px) {
-    padding-left: 25vw
-  }
-
-  @media only screen and (max-width : 480px) {
-    padding-left: 15vw
-  }
-}
-
-.row-container {
-  margin: 0 auto;
-}
+@import "variables";
 
 #about {
-  padding-top: 10%;
-  min-height: 100%;
-
-  @media only screen and (max-width : 768px) {
-    margin-top: 250px
-  }
-
-  @media only screen and (min-width: 768px) and (max-width : 992px) {
-    margin-top: 200px
-  }
+	/*background-color: #F5F2F0;*/
+	padding: 10%;
+	@media (max-width: $sm) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
 }
 
-.h2 {
-  margin: 0 auto;
-}
+.about-text {
+	@media (min-width: $lg) {
+		width: 55%;
+		margin: 0 auto;
+	}
 
-.h2 p {
-  opacity: 0.2;
-  font-weight: 600;
-  font-size: 64px;
-  color: #000000;
-  letter-spacing: -2.4px;
-  margin-bottom: 40px;
-}
+	h1 {
+		font-family: ApercuPro-Regular;
+		font-size: 48px;
+		color: #000000;
+		margin-bottom: 25px;
+	}
 
-.what-i {
-  opacity: 0.7;
-  font-weight: bold;
-  font-size: 30px;
-  color: #000000;
-  letter-spacing: -1.27px;
-  line-height: 0;
-}
-
-.verb {
-  /*font-family: ;*/
-  font-weight: bold;
-  font-size: 100px;
-  letter-spacing: -4.03px;
-  line-height: 0px;
-  color: #000000;
-  margin: 40px 0px 55px;
-  @media only screen and (min-width : 768px) and (max-width : 992px) {
-    font-size: 85px;
-    letter-spacing: -2.03px;
-  }
-}
-
-.column {
-  padding: 0px;
-  padding-right: 30px;
-}
-
-.column ul {
-  list-style-type: none;
-  padding-left: 5px;
-  line-height: 30px;
-  font-weight: normal;
-  margin: 50px 0px;
-}
-
-.background {
-  position: absolute;
-  display: block;
-  margin-top: -50%;
-  z-index: 0;
+	p {
+		font-family: ApercuPro-Light;
+		font-size: 18px;
+		color: #6D6D6D;
+		line-height: 30px;
+	}
 }

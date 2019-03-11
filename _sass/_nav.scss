@@ -1,0 +1,13 @@
+@import "variables";
+
+nav {
+	background-color: white;
+	margin-top: 20px;
+	a {
+		margin-right: 20px;
+	}
+}
+
+.navbar-nav {
+	flex-direction: row !important;
+}

@@ -1,113 +1,20 @@
-<!-- MERE -->
-<div class="visible-xs visible-sm">
-	<div class="project-img-mobile-rect mere-rect""></div>
-	<img src="/assets/images/mere.png" class="project-img-mobile">
-</div>
-
-<section class="project-section project-section-left" id="mere">
-	<div class="hidden-xs hidden-sm rect mere-rect">
-		<a href="https://hellomere.com">
-			<img src="/assets/images/mere.png" class="hidden-sm hidden-xs project-img project-img-left project-img-phone rellax" data-rellax-speed="4">
-		</a>
-	</div>
-	<div class="project-text">
-		<a href="https://hellomere.com">
-			<p class="project-title">mere.</p>
-		</a>
-		<p class="text project-desc">Daily journal app and Congressional App Challenge winner. (React Native)</p>
-	</div>
-</section>
-
-<!-- READLIO -->
-<div class="visible-xs visible-sm">
-	<div class="project-img-mobile-rect readlio-rect"></div>
-	<img src="/assets/images/readlio-mobile.png" class="visible-xs visible-sm project-img-mobile project-img-mobile-comp">
-</div>
-
-<section class="project-section project-section-right" id="readlio">
-	<div class="hidden-xs hidden-sm rect right-rect readlio-rect">
-		<a href="https://readlio.com">
-			<img src="/assets/images/readlio.png" class="hidden-sm hidden-xs project-img computer-img rellax" data-rellax-speed="3">
-		</a>
-	</div>
-	<div class="project-text">
-		<a href="https://readlio.com">
-			<p class="project-title">readlio.</p>
-		</a>
-		<p class="text project-desc" id="project-desc-readlio">Platform for teachers to track student reading, with over 2700 users to date. (Ruby on Rails)</p>
-	</div>
-</section>
-
-<!-- WINDUP -->
-<div class="visible-xs visible-sm">
-	<div class="project-img-mobile-rect windup-rect"></div>
-	<img src="/assets/images/windup.png" class="visible-xs visible-sm project-img-mobile">
-</div>
-
-<section class="project-section project-section-left" id="windup">
-	<div class="hidden-xs hidden-sm rect windup-rect">
-		<a href="https://windup.oliviachang.me">
-			<img src="/assets/images/windup.png" id="windup-img" class="hidden-sm hidden-xs project-img project-img-left project-img-phone rellax" data-rellax-speed="3">
-		</a>
-	</div>
-	
-	<div class="project-text">
-		<a href="https://windup.oliviachang.me">
-			<p class="project-title">windup.</p>
-		</a>
-		<p class="text project-desc">iOS music player for figure skaters, gymnasts, and dancers. (React Native)</p>
-	</div>
-</section>
-
-<!-- ZAPATA -->
-<div class="visible-xs visible-sm">
-	<div class="project-img-mobile-rect zapata-rect"></div>
-	<img src="/assets/images/zapata-mobile.png" class="visible-xs visible-sm project-img-mobile project-img-mobile-comp">
-</div>
-
-<section class="project-section project-section-right" id="zapata">
-	<div class="hidden-xs hidden-sm rect right-rect zapata-rect">
-		<a href="https://zapata.oliviachang.me">
-			<img src="/assets/images/zapata.png" class="hidden-sm hidden-xs project-img computer-img rellax" id="zapata-img" data-rellax-speed="3">
-		</a>
-	</div>
-	<div class="project-text">
-		<a href="https://zapata.oliviachang.me">
-			<p class="project-title">emiliano<br>zapata.</p>
-		</a>
-		<p class="text project-desc" id="project-desc-readlio">Profile of Mexico's famous revolutionary and revered cultural figure. (Jekyll)</p>
-	</div>
-</section>
-
-<!-- STUDYGUIDES -->
-<div class="visible-xs visible-sm">
-	<div class="project-img-mobile-rect studyguides-rect"></div>
-	<img src="/assets/images/studyguides-mobile.png" class="visible-xs visible-sm project-img-mobile project-img-mobile-comp">
-</div>
-
-<section class="project-section project-section-left" id="studyguides">
-	<div class="hidden-xs hidden-sm rect studyguides-rect">
-		<a href="https://studyguides.science">
-			<img src="/assets/images/studyguides.png" id="studyguides-img" class="hidden-sm hidden-xs project-img project-img-left rellax" data-rellax-speed="2">
-		</a>
-	</div>
-	
-	<div class="project-text">
-		<a href="https://studyguides.science">
-			<p class="project-title">study<br>guides.</p>
-		</a>
-		<p class="text project-desc">Collection of notes on biology and chemistry. (Jekyll)</p>
-	</div>
-	
-</section>
-
-<div class="container other-projects-container">
-	<div class="h2 hidden-xs">
-		<p>some other projects.</p>
-	</div>
-	<div class="links other-projects-links">
-		<a href="https://react.coach/"><span class="underline">react.coach.</span></a>
-		<a href="https://maraudersmap.oliviachang.me"><span class="underline">marauder's map.</span></a>
-		<a href="https://paly.win"><span class="underline">paly.win.</span></a>
-	</div>
-</div>
+{% assign projects = site.projects | sort: "order" %}
+{% for project in projects %}
+	<a class="project-link" href="{{project.link}}" target="_">
+		<div class="project {% if forloop.last %} project-last {% endif %}" data-aos="fade-in">
+			<div class="project-type noselect">
+				<div class="project-type-spacer"></div>
+				<p class="mono">{{project.type}}</p>
+			</div>
+			<div class="project-image-frame noselect">
+				<img src="{{project.main_image_url}}">
+			</div>
+			<div class="project-info">
+				<p class="project-index">0{{forloop.index}}</p>
+				<h2 class="project-title">{{project.title}}</h2>
+				<p class="project-desc">{{project.desc}}</p>
+				<p class="project-language mono">{{project.language}}</p>
+			</div>
+		</div>
+	</a>
+{% endfor %}
