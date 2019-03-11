@@ -69,14 +69,16 @@
 
 .project-index {
 	@include smooth-transition;
-	font-family: Apercu-Mono;
+	font-family: Apercu Mono;
+	font-weight: normal;
 	font-size: 24px;
 	color: #6D6D6D;
 }
 
 .project-title {
 	@include smooth-transition;
-	font-family: ApercuPro-Regular;
+	font-family: Apercu Pro;
+	font-weight: normal;
 	font-size: 48px;
 	color: #000000;
 	/*color: #6D6D6D;*/
@@ -85,7 +87,8 @@
 
 .project-desc {
 	@include smooth-transition;
-	font-family: ApercuPro-Light;
+	font-family: Apercu Pro;
+	font-weight: 100;
 	margin-top: 10px;
 	font-size: 18px;
 	color: #6D6D6D;

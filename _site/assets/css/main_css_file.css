@@ -6,7 +6,7 @@ html, body {
   margin: 0; }
 
 * {
-  font-family: Apercu Pro, Apercu-Mono , Graphik, Lato, Helvetica Neue,Helvetica,Arial,sans-serif; }
+  font-family: 'Apercu Pro', 'Apercu Mono' , Graphik, Lato, Helvetica Neue,Helvetica,Arial,sans-serif; }
 
 .noselect {
   -webkit-touch-callout: none;
@@ -24,6 +24,8 @@ html, body {
      supported by Chrome and Opera */ }
 
 a {
+  color: #4A4A4A;
+  font-weight: normal;
   -webkit-transition: all 0.25s;
   /* Safari and Chrome */
   -moz-transition: all 0.25s;
@@ -38,8 +40,29 @@ a {
     text-decoration: none; }
 
 /* bootstrap media queries */
+@font-face {
+  font-family: 'Apercu Pro';
+  src: url("/assets/fonts/ApercuPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Apercu Pro';
+  src: url("/assets/fonts/ApercuPro-Light.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'Apercu Pro';
+  src: url("/assets/fonts/ApercuPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Apercu Mono';
+  src: url("/assets/fonts/Apercu-Mono.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 .mono {
-  font-family: Apercu-Mono;
+  font-family: Apercu Mono;
+  font-weight: normal;
   font-size: 16px;
   color: #6D6D6D; }
 
@@ -60,11 +83,13 @@ nav {
     #hero {
       margin: 200px auto 200px 6%; } }
   #hero h1 {
-    font-family: ApercuPro-Bold;
+    font-family: Apercu Pro;
+    font-weight: bold;
     font-size: 48px;
     color: #000000; }
   #hero p {
-    font-family: ApercuPro-Light;
+    font-family: Apercu Pro;
+    font-weight: 100;
     font-size: 20px;
     color: #6D6D6D;
     margin-top: 10px; }
@@ -143,7 +168,8 @@ nav {
   -o-transition: all 0.25s;
   /* Opera */
   transition: all 0.25s;
-  font-family: Apercu-Mono;
+  font-family: Apercu Mono;
+  font-weight: normal;
   font-size: 24px;
   color: #6D6D6D; }
 
@@ -157,7 +183,8 @@ nav {
   -o-transition: all 0.25s;
   /* Opera */
   transition: all 0.25s;
-  font-family: ApercuPro-Regular;
+  font-family: Apercu Pro;
+  font-weight: normal;
   font-size: 48px;
   color: #000000;
   /*color: #6D6D6D;*/
@@ -173,7 +200,8 @@ nav {
   -o-transition: all 0.25s;
   /* Opera */
   transition: all 0.25s;
-  font-family: ApercuPro-Light;
+  font-family: Apercu Pro;
+  font-weight: 100;
   margin-top: 10px;
   font-size: 18px;
   color: #6D6D6D;
@@ -200,12 +228,14 @@ nav {
     width: 55%;
     margin: 0 auto; } }
 .about-text h1 {
-  font-family: ApercuPro-Regular;
+  font-family: 'Apercu Pro';
+  font-weight: normal;
   font-size: 48px;
   color: #000000;
   margin-bottom: 25px; }
 .about-text p {
-  font-family: ApercuPro-Light;
+  font-family: 'Apercu Pro';
+  font-weight: 100;
   font-size: 18px;
   color: #6D6D6D;
   line-height: 30px; }

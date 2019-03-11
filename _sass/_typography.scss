@@ -1,7 +1,36 @@
 @import "variables";
 
+@font-face {
+	font-family: 'Apercu Pro';
+	src: url('/assets/fonts/ApercuPro-Regular.ttf')  format('truetype');
+	font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Apercu Pro';
+	src: url('/assets/fonts/ApercuPro-Light.ttf')  format('truetype');
+	font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Apercu Pro';
+	src: url('/assets/fonts/ApercuPro-Bold.ttf')  format('truetype');
+	font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'Apercu Mono';
+	src: url('/assets/fonts/Apercu-Mono.ttf')  format('truetype');
+	font-weight: normal;
+  font-style: normal;
+}
+
 .mono {
-	font-family: Apercu-Mono;
+	font-family: Apercu Mono;
+	font-weight: normal;
 	font-size: 16px;
 	color: #6D6D6D;
 }

@@ -5,6 +5,6 @@ title: Windup
 desc: Keep your skating programs in one place.
 type: Project
 language: React Native
-main_image_url: "/assets/images/windup.webp"
+main_image_url: "/assets/images/windup.png"
 link: "https://windup.oliviachang.me/"
 ---
