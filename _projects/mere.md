@@ -5,6 +5,6 @@ title: Mere
 desc: Daily journal app and Congressional App Challenge winner.
 type: Award
 language: React Native
-main_image_url: "/assets/images/mere.png"
+main_image_url: "/assets/images/mere.webp"
 link: "http://mere.oliviachang.me"
 ---

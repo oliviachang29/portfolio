@@ -2,4 +2,6 @@
 
 Link: https://oliviachang.me
 
-Built with Jekyll
+<img src="https://s3.amazonaws.com/github-demo-images/portfolio.png">
+
+Built with Jekyll.

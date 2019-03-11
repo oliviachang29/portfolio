@@ -210,16 +210,21 @@ nav {
   color: #6D6D6D;
   line-height: 30px; }
 
-footer {
+#footer-links-container {
+  margin-bottom: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
 
 #footer-links {
-  margin: 0 auto;
-  margin-bottom: 30px; }
+  margin: 0 auto; }
   #footer-links a {
     margin: auto 10px; }
     @media (min-width: 768px) {
       #footer-links a {
         margin: auto 20px; } }
+
+#copyright {
+  font-size: 12px;
+  text-align: center;
+  color: #CECECE; }

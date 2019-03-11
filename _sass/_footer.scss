@@ -1,4 +1,5 @@
-footer {
+#footer-links-container {
+	margin-bottom: 30px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -6,11 +7,17 @@ footer {
 
 #footer-links {
 	margin: 0 auto;
-	margin-bottom: 30px;
+	
 	a {
 		margin: auto 10px;
 		@media (min-width: $md) {
 			margin: auto 20px;
 		}
 	}
+}
+
+#copyright {
+	font-size: 12px;
+	text-align: center;
+	color: #CECECE;
 }
