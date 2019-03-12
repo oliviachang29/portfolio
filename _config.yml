@@ -15,3 +15,13 @@ collections:
     output: true
     permalink: "/:title"
     layout: project
+  other_projects:
+    title: Other Projects
+    output: true
+    permalink: "/:title"
+    layout: project
+  client_work:
+    title: Client Work
+    output: true
+    permalink: "/:title"
+    layout: project

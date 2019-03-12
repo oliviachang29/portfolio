@@ -26,16 +26,31 @@
 
 </head>
 
+<nav class="navbar navbar-expand-lg">
+	<ul class="navbar-nav ml-auto">
+		<!-- <li class="nav-item"><a data-scroll class="nav-link mono" href="#client-work">Client Work</a></li> -->
+		<li class="nav-item"><a data-scroll class="nav-link mono" href="/#about">About</a></li>
+		<li class="nav-item"><a class="nav-link mono" href="mailto:hello@oliviachang.me">Contact</a></li>
+	</ul>
+</nav>
 	<body>
 		<div id="barba-wrapper">
 	<div class="barba-container">
+		<div id="project-page-container">
+			<h1>Readlio</h1>
+			<p>Platform for teachers to track student reading, with over 2700 users to date.</p>
+			
+				<a href="https://readlio.com" class="mono noselect" target="_">> Go to website</a>
+			
+			<img class="lazy main-image" src="/assets/images/lazy.jpg" data-src="/assets/images/projects/readlio.png">
+			<div id="project-page-content">
+				
 
-		<h1>Readlio</h1>
-		<p>Platform for teachers to track student reading, with over 2700 users to date.</p>
+			</div>
+		</div>
 	</div>
 </div>
-	</body>
-	<footer>
+		<footer>
 	<div id="footer-links-container">
 		<div id="footer-links">
 			<a href="mailto:hello@oliviachang.me" class="mono">Email</a>
@@ -48,18 +63,11 @@
 </footer>
 
 <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
-<script src="/assets/js/main.js" type="text/javascript"></script>
 <script src="/assets/js/barba.min.js" type="text/javascript"></script>
-
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-AOS.init({
-	once: true
-});
-</script>
-
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
-<script>
-	var scroll = new SmoothScroll('a[href*="#"]');
-</script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@11.0.4/dist/lazyload.min.js"></script>
+
+<script src="/assets/js/main.js" type="text/javascript"></script>
+	</body>
 </html>

@@ -1,0 +1,25 @@
+@import "variables";
+#project-page-container {
+	@media (min-width: $sm) {
+		width: 70%;
+	}
+	
+	margin: 0 auto;
+	padding: 5% 20px 10%;
+}
+
+.main-image {
+	width: 100%;
+	margin-top: 5%;
+}
+
+#project-page-content {
+	p {
+		text-align: center;
+
+		@media (min-width: $md) {
+			width: 60%;
+		}
+		margin: 60px auto;
+	}
+}

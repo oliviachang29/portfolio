@@ -20,26 +20,44 @@
 /* make image small when hover */
 .project-link:hover .project {
 	img {
-		-webkit-transform:scale(1.02);
-	    -moz-transform:scale(1.02);
-	    -ms-transform:scale(1.02);
-	    -o-transform:scale(1.02);
-	     transform:scale(1.02);
+		-webkit-transform:scale(1.05);
+	    -moz-transform:scale(1.05);
+	    -ms-transform:scale(1.05);
+	    -o-transform:scale(1.05);
+	     transform:scale(1.05);
 	}
 }
 
-.project-link:hover .project-index {
-	color: #000000;
-}
+.project-link:hover {
+	.project-index {
+		color: #000000;
+	}
 
-.project-link:hover .project-desc {
-	color: #4A4A4A;
+	.project-type p {
+		color: #000000;	
+	}
+
+	.project-language {
+		color: #000000;	
+	}
+
+	.project-desc {
+		color: #4A4A4A;
+	}
 }
 
 .project-image-frame {
 	overflow: hidden;
-	width: 55%;
-	height: 512px;
+	min-height: 512px;
+
+	width: 20%;
+
+	@media (min-width: $sm) {
+		width: 44%;
+	}
+	@media (min-width: $lg) {
+		width: 55%;
+	}
 }
 
 .project-type-spacer {
@@ -62,9 +80,17 @@
 }
 
 .project-info {
+	@media (min-width: $sm) {
+		width: 50%;
+	}
+	@media (min-width: $lg) {
+		width: 39%;
+	}
 	padding: 20px 50px 30px;
 	display: flex;
 	flex-direction: column;
+
+	overflow-x: hidden;
 }
 
 .project-index {
@@ -87,12 +113,6 @@
 
 .project-desc {
 	@include smooth-transition;
-	font-family: Apercu Pro;
-	font-weight: 100;
-	margin-top: 10px;
-	font-size: 18px;
-	color: #6D6D6D;
-	line-height: 30px;
 	width: 200px;
 	@media (min-width: $md) {
 		width: 300px;

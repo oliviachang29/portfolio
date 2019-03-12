@@ -34,3 +34,22 @@
 	font-size: 16px;
 	color: #6D6D6D;
 }
+
+a {
+  color: #4A4A4A;
+  font-weight: normal;
+  @include smooth-transition;
+	&:hover {
+		color: #000000;
+		text-decoration: none;
+	}
+}
+
+p {
+	font-family: Apercu Pro;
+	font-weight: 100;
+	margin-top: 10px;
+	font-size: 18px;
+	color: #6D6D6D;
+	line-height: 30px;
+}

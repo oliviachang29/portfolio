@@ -1,0 +1,52 @@
+@import "variables";
+
+.section-small-projects {
+	margin: 5% $left-padding auto;
+	padding-top: 5%;
+	h1 {
+		text-align: left;
+		margin-bottom: 60px;
+	}
+	img {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+.project-link:hover .client-work-container {
+	img {
+		-webkit-transform:scale(.95);
+	    -moz-transform:scale(.95);
+	    -ms-transform:scale(.95);
+	    -o-transform:scale(.95);
+	     transform:scale(.95);
+	}
+
+	p {
+		color: black;
+	}
+}
+
+.client-work-container {
+	text-align: center;
+	margin-bottom: 60px;
+
+	img {
+		@include smooth-transition;
+	}
+
+	h3 {
+		color: black;
+		margin-top: 10px;
+	}
+
+	p {
+		@include smooth-transition;
+
+		font-family: 'Apercu Pro';
+		margin-top: 20px;
+		font-weight: 100;
+		font-size: 18px;
+		color: #6D6D6D;
+	}
+}

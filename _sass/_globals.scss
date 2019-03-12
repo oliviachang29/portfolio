@@ -20,13 +20,3 @@ html, body {
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
-
-a {
-  color: #4A4A4A;
-  font-weight: normal;
-  @include smooth-transition;
-	&:hover {
-		color: #000000;
-		text-decoration: none;
-	}
-}
