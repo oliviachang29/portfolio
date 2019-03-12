@@ -5,7 +5,8 @@ title: Jenny Shi
 desc: Art portfolio for a painter and artist based in Palo Alto.
 type: Client Work
 language: "Jekyll"
-main_image_url: "/assets/images/client-work/jenny-shi.png"
+main_image_url: "/assets/images/client-work/large/jenny-shi.png"
+small_image_url: "/assets/images/client-work/small/jenny-shi.png"
 link: "https://jennyshi.me"
 github_link: "https://github.com/oliviachang29/jenny"
 ---
