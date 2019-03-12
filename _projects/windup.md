@@ -7,5 +7,5 @@ type: Projects
 language: React Native
 main_image_url: "/assets/images/projects/windup.png"
 link: "https://windup.oliviachang.me/"
-goto_text: "Go to website"
+github_link: "https://github.com/oliviachang29/windup"
 ---

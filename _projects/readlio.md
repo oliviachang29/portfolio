@@ -7,5 +7,4 @@ type: Projects
 language: Ruby on Rails
 main_image_url: "/assets/images/projects/readlio.png"
 link: "https://readlio.com"
-goto_text: "Go to website"
 ---

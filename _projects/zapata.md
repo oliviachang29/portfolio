@@ -7,5 +7,5 @@ type: Schoolwork
 language: "HTML/CSS"
 main_image_url: "/assets/images/projects/zapata.png"
 link: "https://zapata.oliviachang.me"
-goto_text: "Go to website"
+github_link: "https://github.com/oliviachang29/zapata"
 ---

@@ -8,6 +8,14 @@
 	padding: 5% 20px 10%;
 }
 
+.links {
+	display: flex;
+	flex-direction: row;
+	a {
+		margin-right: 5%;
+	}
+}
+
 .main-image {
 	width: 100%;
 	margin-top: 5%;

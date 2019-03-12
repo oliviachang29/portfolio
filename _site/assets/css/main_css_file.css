@@ -51,6 +51,12 @@ html, body {
   font-size: 16px;
   color: #6D6D6D; }
 
+h1 {
+  font-family: 'Apercu Pro';
+  font-weight: normal;
+  font-size: 48px;
+  color: #000000; }
+
 a {
   color: #4A4A4A;
   font-weight: normal;
@@ -246,17 +252,7 @@ nav {
     width: 55%;
     margin: 0 auto; } }
 .about-text h1 {
-  font-family: 'Apercu Pro';
-  font-weight: normal;
-  font-size: 48px;
-  color: #000000;
   margin-bottom: 25px; }
-.about-text p {
-  font-family: 'Apercu Pro';
-  font-weight: 100;
-  font-size: 18px;
-  color: #6D6D6D;
-  line-height: 30px; }
 
 /* bootstrap media queries */
 .section-small-projects {
@@ -305,10 +301,7 @@ nav {
     /* Opera */
     transition: all 0.25s;
     font-family: 'Apercu Pro';
-    margin-top: 20px;
-    font-weight: 100;
-    font-size: 18px;
-    color: #6D6D6D; }
+    margin-top: 20px; }
 
 #footer-links-container {
   margin-bottom: 30px;
@@ -336,6 +329,12 @@ nav {
   @media (min-width: 576px) {
     #project-page-container {
       width: 70%; } }
+
+.links {
+  display: flex;
+  flex-direction: row; }
+  .links a {
+    margin-right: 5%; }
 
 .main-image {
   width: 100%;

@@ -7,5 +7,5 @@ type: Projects
 language: Jekyll
 main_image_url: "/assets/images/projects/studyguides-science.png"
 link: "https://studyguides.science"
-goto_text: "Go to website"
+github_link: "https://github.com/oliviachang29/studyguides"
 ---

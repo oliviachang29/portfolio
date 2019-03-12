@@ -7,5 +7,5 @@ type: Client Work
 language: "Jekyll"
 main_image_url: "/assets/images/client-work/jenny-shi.png"
 link: "https://jennyshi.me"
-goto_text: "Go to website"
+github_link: "https://github.com/oliviachang29/jenny"
 ---

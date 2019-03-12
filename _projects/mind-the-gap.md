@@ -6,6 +6,6 @@ desc: A beautiful, interactive visualization of US occupations. Awarded Best Web
 type: Hackathons
 language: Chart.js
 main_image_url: "/assets/images/projects/mind-the-gap.png"
-link: "https://github.com/oliviachang29/mind-the-gap"
-goto_text: "View on Github"
+link: "https://mindthegap.oliviachang.me/"
+github_link: "https://github.com/oliviachang29/mind-the-gap"
 ---

@@ -7,5 +7,5 @@ type: Projects
 language: "HTML/CSS"
 main_image_url: "/assets/images/projects/paly-win.png"
 link: "https://paly.win"
-goto_text: "Go to website"
+github_link: "https://github.com/oliviachang29/paly.win"
 ---
