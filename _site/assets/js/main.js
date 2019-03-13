@@ -1,9 +1,26 @@
 function initJS() {
-    var scroll = new SmoothScroll('a[href*="#"]');
-    var lazyLoadInstance = new LazyLoad({});
     AOS.init({
         once: true
     });
+    var scroll = new SmoothScroll('a[href*="#"]');
+    var lazyLoadInstance = new LazyLoad({  
+      callback_load: function () {
+        AOS.refresh();
+      }
+    });
+
+    if (window.location.pathname != '/') {
+        $('.nav-link-x').css({
+            opacity: 1,
+            cursor: 'pointer'
+        });
+        scroll.animateScroll(0);
+    } else {
+        $('.nav-link-x').css({
+            opacity: 0,
+            cursor: 'default'
+        });
+    }
 }
 // executes this stuff before load
 $(function() {
@@ -39,7 +56,7 @@ $(function() {
 
             $el.animate({ opacity: 1 }, 400, function() {
                 _this.done();
-                initJS()
+                initJS();
             });
         }
     });

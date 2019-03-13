@@ -1,5 +1,5 @@
 #footer-links-container {
-	margin-bottom: 30px;
+	padding-bottom: 30px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -14,10 +14,13 @@
 			margin: auto 20px;
 		}
 	}
+
 }
 
 #copyright {
 	font-size: 12px;
 	text-align: center;
 	color: #CECECE;
+	padding-bottom: 1rem;
+	margin-bottom: 0;
 }

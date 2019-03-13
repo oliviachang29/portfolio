@@ -1,13 +1,31 @@
+<script>
+	var images = new Array()
+	function preload() {
+		for (i = 0; i < preload.arguments.length; i++) {
+			images[i] = new Image()
+			images[i].src = preload.arguments[i]
+		}
+	}
+	preload(
+		{% for project in site.projects %}
+			"{{project.main_image_url}}",
+		{% endfor %}
+		{% for project in site.client_work %}
+			"{{project.main_image_url}}",
+		{% endfor %}
+	)
+</script>
+
 {% assign projects = site.projects | sort: "order" %}
 {% for project in projects %}
 	<a class="project-link" href="{{project.url}}" target="_">
-		<div class="project {% if forloop.last %} project-last {% endif %}" data-aos="fade-in">
+		<div class="project {% if forloop.last %} project-last {% endif %}">
 			<div class="project-type noselect">
 				<div class="project-type-spacer"></div>
 				<p class="mono">{{project.type}}</p>
 			</div>
 			<div class="project-image-frame noselect">
-				<img src="{{project.main_image_url}}">
+				<img class="lazy" src="/assets/images/lazy.jpg" data-src="{{project.main_image_url}}">
 			</div>
 			<div class="project-info">
 				<p class="project-index">0{{forloop.index}}</p>

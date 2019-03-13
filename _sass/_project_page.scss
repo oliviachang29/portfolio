@@ -1,33 +1,61 @@
 @import "variables";
 #project-page-container {
+	margin: 0 auto;
+	padding: 5% 20px 10%;
 	@media (min-width: $sm) {
 		width: 70%;
 	}
-	
-	margin: 0 auto;
-	padding: 5% 20px 10%;
 }
 
 .links {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	@media (min-width: $md) {
+		flex-direction: row;
+	}
+
 	a {
-		margin-right: 5%;
+		margin-bottom: 10px;
+		@media (min-width: $md) {
+			margin-bottom: 0;
+			margin-right: 5%;
+		}
 	}
 }
 
 .main-image {
 	width: 100%;
-	margin-top: 5%;
 }
 
 #project-page-content {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
 	p {
 		text-align: center;
-
+		margin: 3% auto;
 		@media (min-width: $md) {
 			width: 60%;
 		}
-		margin: 60px auto;
 	}
+
+	img {
+		margin: 5% auto;
+		width: 100%;
+	}
+	iframe {
+		margin: 5% auto;
+	}
+}
+
+.app-store-screenshot {
+	@media (min-width: $md) {
+		width: 70% !important;
+	}
+}
+
+.image-large-margin {
+	margin: 40px 0;
 }

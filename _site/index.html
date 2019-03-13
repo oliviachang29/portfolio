@@ -28,31 +28,67 @@
 
 <nav class="navbar navbar-expand-lg">
 	<ul class="navbar-nav ml-auto">
-		<!-- <li class="nav-item"><a data-scroll class="nav-link mono" href="#client-work">Client Work</a></li> -->
-		<li class="nav-item"><a data-scroll class="nav-link mono" href="/#about">About</a></li>
-		<li class="nav-item"><a class="nav-link mono" href="mailto:hello@oliviachang.me">Contact</a></li>
+		<li class="nav-item noselect"><a class="nav-link nav-link-x mono" href="/">Home</a></li>
+		<li class="nav-item noselect"><a data-scroll class="nav-link mono" href="/#about">About</a></li>
+		<li class="nav-item noselect"><a class="nav-link mono" href="mailto:hello@oliviachang.me">Contact</a></li>
 	</ul>
 </nav>
 	<body>
-		<script src="/assets/js/preload.js" type="text/javascript"></script>
-
-<div id="barba-wrapper">
+		<div id="barba-wrapper">
 	<div class="barba-container">
 		<section id="hero">
 	<h1>Olivia Chang</h1>
 	<p>Developer, designer, student, and major nerd.</p>
 </section>
 
+		<script>
+	var images = new Array()
+	function preload() {
+		for (i = 0; i < preload.arguments.length; i++) {
+			images[i] = new Image()
+			images[i].src = preload.arguments[i]
+		}
+	}
+	preload(
 		
+			"/assets/images/projects/marauders-map/marauders-map.png",
+		
+			"/assets/images/projects/mere/mere.png",
+		
+			"/assets/images/projects/mind-the-gap/mind-the-gap.png",
+		
+			"/assets/images/projects/paly-win.png",
+		
+			"/assets/images/projects/readlio.png",
+		
+			"/assets/images/projects/studyguides-science/studyguides-science.png",
+		
+			"/assets/images/projects/tiramisu/tiramisu.png",
+		
+			"/assets/images/projects/windup.png",
+		
+			"/assets/images/projects/zapata/zapata.png",
+		
+		
+			"/assets/images/client-work/large/explore-engineering.png",
+		
+			"/assets/images/client-work/large/jenny-shi.png",
+		
+			"/assets/images/client-work/large/seris.png",
+		
+	)
+</script>
+
+
 
 	<a class="project-link" href="/mere" target="_">
-		<div class="project " data-aos="fade-in">
+		<div class="project ">
 			<div class="project-type noselect">
 				<div class="project-type-spacer"></div>
 				<p class="mono">Awards</p>
 			</div>
 			<div class="project-image-frame noselect">
-				<img src="/assets/images/projects/mere/mere.png">
+				<img class="lazy" src="/assets/images/lazy.jpg" data-src="/assets/images/projects/mere/mere.png">
 			</div>
 			<div class="project-info">
 				<p class="project-index">01</p>
@@ -64,13 +100,13 @@
 	</a>
 
 	<a class="project-link" href="/readlio" target="_">
-		<div class="project " data-aos="fade-in">
+		<div class="project ">
 			<div class="project-type noselect">
 				<div class="project-type-spacer"></div>
 				<p class="mono">Projects</p>
 			</div>
 			<div class="project-image-frame noselect">
-				<img src="/assets/images/projects/readlio.png">
+				<img class="lazy" src="/assets/images/lazy.jpg" data-src="/assets/images/projects/readlio.png">
 			</div>
 			<div class="project-info">
 				<p class="project-index">02</p>
@@ -82,31 +118,31 @@
 	</a>
 
 	<a class="project-link" href="/mind-the-gap" target="_">
-		<div class="project " data-aos="fade-in">
+		<div class="project ">
 			<div class="project-type noselect">
 				<div class="project-type-spacer"></div>
 				<p class="mono">Hackathons</p>
 			</div>
 			<div class="project-image-frame noselect">
-				<img src="/assets/images/projects/mind-the-gap.png">
+				<img class="lazy" src="/assets/images/lazy.jpg" data-src="/assets/images/projects/mind-the-gap/mind-the-gap.png">
 			</div>
 			<div class="project-info">
 				<p class="project-index">03</p>
 				<h2 class="project-title">Mind the Gap</h2>
-				<p class="project-desc">A beautiful, interactive visualization of US occupations. Awarded Best Web App and Top Team at PixelHacks III 2019 (out of 43 teams).</p>
+				<p class="project-desc">A beautiful, interactive visualization of US occupations. Awarded Best Web App and Top Team at PixelHacks 2019 (out of 43 teams).</p>
 				<p class="project-language mono">Chart.js</p>
 			</div>
 		</div>
 	</a>
 
 	<a class="project-link" href="/tiramisu" target="_">
-		<div class="project " data-aos="fade-in">
+		<div class="project ">
 			<div class="project-type noselect">
 				<div class="project-type-spacer"></div>
 				<p class="mono">Hackathons</p>
 			</div>
 			<div class="project-image-frame noselect">
-				<img src="/assets/images/projects/tiramisu.png">
+				<img class="lazy" src="/assets/images/lazy.jpg" data-src="/assets/images/projects/tiramisu/tiramisu.png">
 			</div>
 			<div class="project-info">
 				<p class="project-index">04</p>
@@ -118,13 +154,13 @@
 	</a>
 
 	<a class="project-link" href="/windup" target="_">
-		<div class="project " data-aos="fade-in">
+		<div class="project ">
 			<div class="project-type noselect">
 				<div class="project-type-spacer"></div>
 				<p class="mono">Projects</p>
 			</div>
 			<div class="project-image-frame noselect">
-				<img src="/assets/images/projects/windup.png">
+				<img class="lazy" src="/assets/images/lazy.jpg" data-src="/assets/images/projects/windup.png">
 			</div>
 			<div class="project-info">
 				<p class="project-index">05</p>
@@ -136,13 +172,13 @@
 	</a>
 
 	<a class="project-link" href="/studyguides-science" target="_">
-		<div class="project " data-aos="fade-in">
+		<div class="project ">
 			<div class="project-type noselect">
 				<div class="project-type-spacer"></div>
 				<p class="mono">Projects</p>
 			</div>
 			<div class="project-image-frame noselect">
-				<img src="/assets/images/projects/studyguides-science.png">
+				<img class="lazy" src="/assets/images/lazy.jpg" data-src="/assets/images/projects/studyguides-science/studyguides-science.png">
 			</div>
 			<div class="project-info">
 				<p class="project-index">06</p>
@@ -154,13 +190,13 @@
 	</a>
 
 	<a class="project-link" href="/zapata" target="_">
-		<div class="project " data-aos="fade-in">
+		<div class="project ">
 			<div class="project-type noselect">
 				<div class="project-type-spacer"></div>
 				<p class="mono">Schoolwork</p>
 			</div>
 			<div class="project-image-frame noselect">
-				<img src="/assets/images/projects/zapata.png">
+				<img class="lazy" src="/assets/images/lazy.jpg" data-src="/assets/images/projects/zapata/zapata.png">
 			</div>
 			<div class="project-info">
 				<p class="project-index">07</p>
@@ -172,13 +208,13 @@
 	</a>
 
 	<a class="project-link" href="/paly-win" target="_">
-		<div class="project " data-aos="fade-in">
+		<div class="project ">
 			<div class="project-type noselect">
 				<div class="project-type-spacer"></div>
 				<p class="mono">Projects</p>
 			</div>
 			<div class="project-image-frame noselect">
-				<img src="/assets/images/projects/paly-win.png">
+				<img class="lazy" src="/assets/images/lazy.jpg" data-src="/assets/images/projects/paly-win.png">
 			</div>
 			<div class="project-info">
 				<p class="project-index">08</p>
@@ -190,13 +226,13 @@
 	</a>
 
 	<a class="project-link" href="/marauders-map" target="_">
-		<div class="project  project-last " data-aos="fade-in">
+		<div class="project  project-last ">
 			<div class="project-type noselect">
 				<div class="project-type-spacer"></div>
 				<p class="mono">Projects</p>
 			</div>
 			<div class="project-image-frame noselect">
-				<img src="/assets/images/projects/marauders-map.png">
+				<img class="lazy" src="/assets/images/lazy.jpg" data-src="/assets/images/projects/marauders-map/marauders-map.png">
 			</div>
 			<div class="project-info">
 				<p class="project-index">09</p>
@@ -212,7 +248,7 @@
 	<div class="row">
 		
 		
-			<div class="col-sm-6 col-md-4" data-aos="fade-in">
+			<div class="col-sm-6 col-md-4">
 				<a class="project-link" href="/jennyshi" target="_">
 					<div class="client-work-container">
 						<img class="lazy" src="/assets/images/lazy.jpg" data-src="/assets/images/client-work/small/jenny-shi.png">
@@ -222,7 +258,7 @@
 				</a>
 			</div>
 		
-			<div class="col-sm-6 col-md-4" data-aos="fade-in">
+			<div class="col-sm-6 col-md-4">
 				<a class="project-link" href="/seris" target="_">
 					<div class="client-work-container">
 						<img class="lazy" src="/assets/images/lazy.jpg" data-src="/assets/images/client-work/small/seris.png">
@@ -232,7 +268,7 @@
 				</a>
 			</div>
 		
-			<div class="col-sm-6 col-md-4" data-aos="fade-in">
+			<div class="col-sm-6 col-md-4">
 				<a class="project-link" href="/explore-engineering" target="_">
 					<div class="client-work-container">
 						<img class="lazy" src="/assets/images/lazy.jpg" data-src="/assets/images/client-work/small/explore-engineering.png">

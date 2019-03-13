@@ -4,6 +4,7 @@ layout: default
 <div id="barba-wrapper">
 	<div class="barba-container">
 		<div id="project-page-container">
+			<p class="mono">{{page.language}}</p>
 			<h1>{{page.title}}</h1>
 			<p>{{page.desc}}</p>
 			<div class="links">
@@ -14,8 +15,10 @@ layout: default
 					<a href="{{ page.github_link }}" class="mono noselect" target="_">> View on Github</a>
 				{% endif %}
 			</div>
-			<img class="lazy main-image" src="/assets/images/lazy.jpg" data-src="{{page.main_image_url}}">
 			<div id="project-page-content">
+				{% if page.show_image != "false" %}
+					<img class="lazy main-image" src="/assets/images/lazy.jpg" data-src="{{page.main_image_url}}">
+				{% endif %}
 				{{ content }}
 			</div>
 		</div>
