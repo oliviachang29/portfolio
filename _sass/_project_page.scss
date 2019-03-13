@@ -34,9 +34,10 @@
 	justify-content: center;
 
 	p {
-		text-align: center;
+		text-align: left;
 		margin: 3% auto;
 		@media (min-width: $md) {
+			text-align: center;
 			width: 60%;
 		}
 	}
