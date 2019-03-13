@@ -43,7 +43,7 @@
 	p {
 		@include smooth-transition;
 
-		font-family: 'Apercu Pro';
+		font-family: $main-font;
 		margin-top: 20px;
 	}
 }
