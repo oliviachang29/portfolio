@@ -368,10 +368,11 @@ nav {
   flex-direction: column;
   justify-content: center; }
   #project-page-content p {
-    text-align: center;
+    text-align: left;
     margin: 3% auto; }
     @media (min-width: 768px) {
       #project-page-content p {
+        text-align: center;
         width: 60%; } }
   #project-page-content img {
     margin: 5% auto;

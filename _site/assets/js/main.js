@@ -8,6 +8,8 @@ function initJS() {
         AOS.refresh();
       }
     });
+    
+    // $(".video-container").fitVids();
 
     if (window.location.pathname != '/') {
         $('.nav-link-x').css({
