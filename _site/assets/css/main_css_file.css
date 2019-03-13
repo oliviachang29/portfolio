@@ -87,9 +87,9 @@ p {
 
 /* bootstrap media queries */
 nav {
-  background-color: transparent;
-  padding-top: 20px; }
+  background-color: transparent; }
   nav a {
+    margin-top: 10px;
     margin-right: 20px; }
 
 .navbar-nav {
@@ -395,3 +395,6 @@ nav {
 
 .p-small-margin-top {
   margin-top: 10px !important; }
+
+.project-page-language {
+  margin-bottom: 10px; }

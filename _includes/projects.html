@@ -18,7 +18,7 @@
 
 {% assign projects = site.projects | sort: "order" %}
 {% for project in projects %}
-	<a class="project-link" href="{{project.url}}" target="_">
+	<a class="project-link" href="{{project.url}}">
 		<div class="project {% if forloop.last %} project-last {% endif %}">
 			<div class="project-type noselect">
 				<div class="project-type-spacer"></div>
