@@ -1,7 +1,7 @@
 title: Olivia Chang
 description: Developer, designer, student, and major nerd.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: ""
 email: "hello@oliviachang.me"
 # Build settings
 markdown: kramdown
@@ -15,13 +15,10 @@ collections:
     output: true
     permalink: "/:title"
     layout: project
-  other_projects:
-    title: Other Projects
-    output: true
-    permalink: "/:title"
-    layout: project
   client_work:
     title: Client Work
     output: true
     permalink: "/:title"
     layout: project
+sass:
+  style: compressed
