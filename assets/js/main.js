@@ -1,3 +1,4 @@
+
 function initJS() {
     AOS.init({
         once: true
@@ -23,6 +24,7 @@ function initJS() {
             cursor: 'default'
         });
     }
+
 }
 // executes this stuff before load
 $(function() {
