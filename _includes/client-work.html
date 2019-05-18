@@ -3,15 +3,10 @@
 	<div class="row">
 		{% assign projects = site.client_work | sort: "order" %}
 		{% for project in projects %}
-			<div class="col-sm-6 col-md-4">
-				<a class="project-link" href="{{ project.url }}" target="_">
-					<div class="client-work-container">
-						<img class="lazy" src="/assets/images/lazy.jpg" data-src="{{project.small_image_url}}">
-						<h3>{{project.title}}</h3>
-						<p>{{project.desc}}</p>
-					</div>
-				</a>
-			</div>
+			{% include client-work-project.html 
+				title=project.title
+				desc=project.desc 
+				%}
 		{% endfor %}
 	</div>
 </section>

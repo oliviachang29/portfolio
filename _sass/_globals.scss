@@ -29,3 +29,17 @@ html, body {
 html.is-animating .transition-fade{
     opacity: 0;
 }
+
+.show-mobile {
+  display: block;
+  @media (min-width: $md) {
+    display: none;
+  }
+}
+
+.show-desktop {
+  display: none;
+  @media (min-width: $md) {
+    display: block;
+  }
+}

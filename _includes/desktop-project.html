@@ -1,0 +1,20 @@
+<a class="project-link" href="{{include.url}}">
+	<div class="project {% if forloop.last %} project-last {% endif %}">
+		<div class="project-type noselect">
+			<div class="project-type-spacer"></div>
+			<p class="mono">{{include.type}}</p>
+		</div>
+		<div class="project-image-frame noselect">
+			<img
+				class="lazy"
+				src="/assets/images/lazy.jpg"
+				data-src="{{include.large_image_url}}">
+		</div>
+		<div class="project-info">
+			<p class="project-index">0{{include.index}}</p>
+			<h2 class="project-title">{{include.title}}</h2>
+			<p class="project-desc">{{include.desc}}</p>
+			<p class="project-language mono">{{include.language}}</p>
+		</div>
+	</div>
+</a>

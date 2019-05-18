@@ -1,41 +1,27 @@
-<script>
-	var images = new Array()
-	function preload() {
-		for (i = 0; i < preload.arguments.length; i++) {
-			images[i] = new Image()
-			images[i].src = preload.arguments[i]
-		}
-	}
-	preload(
-		{% for project in site.projects %}
-			"{{project.large_image_url}}",
-		{% endfor %}
-		{% for project in site.client_work %}
-			"{{project.large_image_url}}",
-		{% endfor %}
-	)
-</script>
+<div class="show-desktop">
+	{% assign projects = site.projects | sort: "order" %}
+	{% for project in projects %}
+		{% include desktop-project.html 
+			url=project.url
+			large_image_url=project.large_image_url
+			index=forloop.index
+			type=project.type
+			title=project.title
+			desc=project.desc
+			language=project.language
+			%}
+	{% endfor %}
+</div>
 
-{% assign projects = site.projects | sort: "order" %}
-{% for project in projects %}
-	<a class="project-link" href="{{project.url}}">
-		<div class="project {% if forloop.last %} project-last {% endif %}">
-			<div class="project-type noselect">
-				<div class="project-type-spacer"></div>
-				<p class="mono">{{project.type}}</p>
-			</div>
-			<div class="project-image-frame noselect">
-				<img
-					class="lazy"
-					src="/assets/images/lazy.jpg"
-					data-src="{{project.large_image_url}}">
-			</div>
-			<div class="project-info">
-				<p class="project-index">0{{forloop.index}}</p>
-				<h2 class="project-title">{{project.title}}</h2>
-				<p class="project-desc">{{project.desc}}</p>
-				<p class="project-language mono">{{project.language}}</p>
-			</div>
+<div class="show-mobile">
+	<section class="section-small-projects">
+		<div class="row">
+			{% for project in projects %}
+				{% include client-work-project.html 
+						title=project.title
+						desc=project.desc 
+						%}
+			{% endfor %}
 		</div>
-	</a>
-{% endfor %}
+	</section>
+</div>
