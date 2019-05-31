@@ -1,0 +1,19 @@
+---
+layout: padding-bottom
+---
+
+<section id="hero">
+	<h1>Playground</h1>
+	<p>Small and unfinished projects.</p>
+</section>
+<section class="section-small-projects">
+	<div class="row">
+		{% assign projects = site.playground | sort: "order" %}
+		{% for project in projects %}
+			{% include project-types/small-project.html 
+				title=project.title
+				desc=project.desc
+				%}
+		{% endfor %}
+	</div>
+</section>

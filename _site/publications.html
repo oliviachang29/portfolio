@@ -30,13 +30,57 @@
 <nav class="navbar navbar-expand-lg" data-aos="fade-in">
 	<ul class="navbar-nav ml-auto">
 		<li class="nav-item noselect"><a class="nav-link nav-link-x mono" href="/">Home</a></li>
-		<li class="nav-item noselect"><a data-scroll class="nav-link mono" href="/#about">About</a></li>
-		<li class="nav-item noselect"><a data-scroll class="nav-link mono" href="/#contact">Contact</a></li>
+		<li class="nav-item noselect"><a data-scroll class="nav-link mono" href="/publications">Publications</a></li>
+		<li class="nav-item noselect"><a data-scroll class="nav-link mono" href="/playground">Playground</a></li>
+		<!-- <li class="nav-item noselect"><a data-scroll class="nav-link mono" href="/#about">About</a></li> -->
+		<!-- <li class="nav-item noselect"><a data-scroll class="nav-link mono" href="/#contact">Contact</a></li> -->
 	</ul>
 </nav>
 	<body>
-		<h1>Publications</h1>
-
+		<main id="swup" class="transition-fade">
+			<div class="padding-bottom">
+	<section id="hero">
+	<h1>Publications</h1>
+	<p>Coding tutorials and whatnot.</p>
+</section>
+<section class="section-default">
+	
+		
+				<a href="https://medium.com/react-coach/using-codepush-with-wix-react-native-navigation-a6a7938cee24" target="_">
+					<div class="publication">
+						<h4>Using CodePush with Wix react-native-navigation</h4>
+						<p class="date"><strong>02 Aug 2017</strong></p>
+						<p>As React Native grows in popularity, so do its third party modules. One complication that I’ve encountered while using wix’s react-native-navigation is that it isn’t super obvious how to integrate it with Microsoft codepush.</p>
+					</div>
+				</a>
+		
+				<a href="https://medium.com/@oliviazyc/complex-nesting-forms-in-rails-631b369be0de" target="_">
+					<div class="publication">
+						<h4>Complex Nesting Forms in Rails</h4>
+						<p class="date"><strong>03 Aug 2017</strong></p>
+						<p>Rails offers a way to create, edit and destroy models belonging to a parent model. I’m going to show you how to implement this in your Rails app.</p>
+					</div>
+				</a>
+		
+				<a href="https://medium.com/react-coach/how-to-fix-xcode-validation-error-your-binary-is-not-optimized-for-iphone-5-155f7ee70868" target="_">
+					<div class="publication">
+						<h4>How to fix Xcode Validation Error: “Your binary is not optimized for iPhone 5"</h4>
+						<p class="date"><strong>07 Aug 2017</strong></p>
+						<p>I recently ran into this error while archiving my app for upload to iTunes Connect. For these fixes, you will need to have your launch screen images. You can either generate them at appicon.build (an awesome website, by the way) or use a black screen.</p>
+					</div>
+				</a>
+		
+				<a href="https://medium.com/@oliviazyc/publishing-a-free-ghost-blog-with-heroku-namecheap-and-cloudflare-29ae5593258b" target="_">
+					<div class="publication">
+						<h4>Publishing a free Ghost blog with Heroku, Namecheap, and Cloudflare</h4>
+						<p class="date"><strong>28 Jul 2018</strong></p>
+						<p>In this article, I assume you already have a domain name registered, but if not, I prefer Namecheap for registering domains as it has generally low prices and an interface which is easy enough to use. If you haven’t yet, go buy a domain and come back once you’re done.</p>
+					</div>
+				</a>
+		
+</section>
+</div>
+		</main>
 		<footer id="contact">
 	<div id="footer-links-container">
 		<div id="footer-links">
@@ -44,14 +88,14 @@
 			<a href="https://github.com/oliviachang29" class="mono" target="_">Github</a>
 			<a href="https://www.linkedin.com/in/oliviazyc/" class="mono" target="_">Linkedin</a>
 			<a href="https://dribbble.com/oliviazyc" class="mono" target="_">Dribbble</a>
-			<a href="https://medium.com/@oliviazyc" class="mono" target="_">Medium</a>
+			<!-- <a href="https://medium.com/@oliviazyc" class="mono" target="_">Medium</a> -->
 		</div>
 	</div>
 	<p id="copyright" class="mono">&#xa9; <script>document.write(new Date().getFullYear())</script> Olivia Chang. All rights reserved.</p>
 </footer>
 
 <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
-<script src="/assets/js/barba.min.js" type="text/javascript"></script>
+<script src="/assets/js/swup.min.js" type="text/javascript"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@11.0.4/dist/lazyload.min.js"></script>

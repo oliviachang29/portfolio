@@ -1,7 +1,7 @@
 <div class="show-desktop">
 	{% assign projects = site.projects | sort: "order" %}
 	{% for project in projects %}
-		{% include desktop-project.html 
+		{% include project-types/desktop-project.html 
 			url=project.url
 			large_image_url=project.large_image_url
 			index=forloop.index
@@ -9,6 +9,7 @@
 			title=project.title
 			desc=project.desc
 			language=project.language
+			color=project.color
 			%}
 	{% endfor %}
 </div>
@@ -17,7 +18,7 @@
 	<section class="section-small-projects">
 		<div class="row">
 			{% for project in projects %}
-				{% include client-work-project.html 
+				{% include project-types/small-project.html 
 						title=project.title
 						desc=project.desc 
 						%}

@@ -48,15 +48,8 @@
 
 .project-image-frame {
 	overflow: hidden;
-	min-height: 512px;
+	height: 512px;
 
-	width: 80px;
-	@media (min-width: $xs) {
-		width: 160px;
-	}
-	@media (min-width: $sm) {
-		width: 44%;
-	}
 	@media (min-width: $lg) {
 		width: 55%;
 	}

@@ -1,5 +1,20 @@
 ---
-layout: default
+layout: padding-bottom
 ---
 
-<h1>Publications</h1>
+<section id="hero">
+	<h1>Publications</h1>
+	<p>Coding tutorials and whatnot.</p>
+</section>
+<section class="section-default">
+	{% assign publications = site.publications | sort: "date" %}
+		{% for publication in publications %}
+				<a href="{{publication.link}}" target="_">
+					<div class="publication">
+						<h4>{{publication.title}}</h4>
+						<p class="date"><strong>{{publication.date | date_to_string}}</strong></p>
+						<p>{{publication.desc}}</p>
+					</div>
+				</a>
+		{% endfor %}
+</section>

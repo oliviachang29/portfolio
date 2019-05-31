@@ -20,5 +20,13 @@ collections:
     output: true
     permalink: "/:title"
     layout: project
+  publications:
+    title: Publications
+    output: false
+  playground:
+    title: Playground
+    output: true
+    permalink: "/:title"
+    layout: project
 sass:
   style: compressed

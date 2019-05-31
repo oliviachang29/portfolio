@@ -1,8 +1,11 @@
 @import "variables";
 
+#client-work {
+	padding-top: 5%;
+}
+
 .section-small-projects {
 	margin: 5% $left-padding auto;
-	padding-top: 5%;
 	h1 {
 		text-align: left;
 		margin-bottom: 60px;
