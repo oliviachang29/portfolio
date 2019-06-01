@@ -1,12 +1,5 @@
----
-layout: padding-bottom
----
-
-<section id="hero">
+<section id="publications" class="section-default">
 	<h1>Publications</h1>
-	<p>Coding tutorials.</p>
-</section>
-<section class="section-default">
 	{% assign publications = site.publications | sort: "date" %}
 	{% for publication in publications %}
 			<a href="{{publication.link}}" target="_">

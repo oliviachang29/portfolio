@@ -15,7 +15,7 @@ layout: default
 	</div>
 	<div id="project-page-content">
 		{% if page.show_image != "false" %}
-			<img class="lazy main-image" src="/assets/images/lazy.jpg" data-src="{{page.large_image_url}}">
+			<img class="lazy main-image" data-src="{{page.large_image_url}}">
 		{% endif %}
 		{{ content }}
 	</div>

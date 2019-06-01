@@ -1,7 +1,7 @@
 <div class="col-sm-6">
 	<a class="project-link" href="{{ project.url }}" target="_">
-		<div class="client-work-container">
-			<img class="lazy" src="/assets/images/lazy.jpg" data-src="{{project.small_image_url}}">
+		<div class="small-project-container">
+			<img class="lazy" data-src="{{project.small_image_url}}" style="background-color: {{project.color}}">
 			<h3>{{include.title}}</h3>
 			<p>{{include.desc}}</p>
 		</div>

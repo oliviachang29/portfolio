@@ -1,7 +1,21 @@
+#publications {
+	margin-top: 5%;
+	h1 {
+		margin-bottom: 60px;
+	}
+}
+
 .publication {
-	margin-bottom: 50px;
+	margin-bottom: 20px;
+
+	.title {
+		font-size: 22px;
+		margin-right: 10px;
+	}
 
 	.date {
+		font-size: 18px;
+		color: #6D6D6D;
 		margin-bottom: 0;
 	}
 }
