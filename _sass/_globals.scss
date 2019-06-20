@@ -56,27 +56,7 @@ html.is-animating .transition-fade{
 }
 
 /* Lazyload config */
-.lazy:not(.initial) {
-  
-}
 .lazy {
-  transition: opacity .4s;
-}
-.lazy.initial,
-.lazy.loaded,
-.lazy.error {
-  opacity: 1;
-}
-.lazy:not([src]) {
   opacity: 0;
+  transition: opacity .3s ease-in;
 }
-
-/*img {
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-
-img[data-src] {
-  opacity: 0;
-}
-*/

@@ -2,11 +2,13 @@ function initJS() {
     AOS.init({
         once: true
     });
+    
     var scroll = new SmoothScroll('a[href*="#"]');
-    var lazyLoadInstance = new LazyLoad({
-        callback_load: function() {
-            AOS.refresh();
-        }
+    
+    $(".lazy").unveil(100, function() {
+      $(this).on('load', function() {
+        this.style.opacity = 1;
+      });
     });
 
     // $(".video-container").fitVids();
