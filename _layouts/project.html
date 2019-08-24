@@ -9,14 +9,20 @@ layout: default
 		{% if page.link %}
 			<a href="{{ page.link }}" class="mono noselect" target="_blank">> Go to website</a>
 		{% endif %}
+		{% if page.app_store_link %}
+			<a href="{{ page.app_store_link }}" class="mono noselect" target="_blank">> View on App Store</a>
+		{% endif %}
 		{% if page.github_link %}
 			<a href="{{ page.github_link }}" class="mono noselect" target="_blank">> View on Github</a>
 		{% endif %}
+		{% if page.devpost_link %}
+			<a href="{{ page.devpost_link }}" class="mono noselect" target="_blank">> View on Devpost</a>
+		{% endif %}
 	</div>
 	<div id="project-page-content">
-		{% if page.show_image != "false" %}
+		{% unless page.hide_image %}
 			<img class="lazy main-image" data-src="{{page.large_image_url}}">
-		{% endif %}
+		{% endunless %}
 		{{ content }}
 	</div>
 </div>
