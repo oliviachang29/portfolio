@@ -13,15 +13,16 @@
 			%}
 	{% endfor %}
 </div>
-
 <div class="show-mobile">
-	<section class="section-small-projects">
+		<section class="section-small-projects">
 		<div class="row">
+			{% assign projects = site.projects | sort: "order" %}
 			{% for project in projects %}
 				{% include project-types/small-project.html 
-						title=project.title
-						desc=project.desc 
-						%}
+					title=project.title
+					desc=project.desc
+					col_type="col-sm-6"
+					%}
 			{% endfor %}
 		</div>
 	</section>
