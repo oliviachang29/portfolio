@@ -11,7 +11,7 @@
 				data-src="{{include.large_image_url}}">
 		</div>
 		<div class="project-info">
-			<p class="project-index">0{{include.index}}</p>
+			<p class="project-index">{% if include.index < 10 %}0{% endif %}{{include.index}}</p>
 			<h2 class="project-title">{{include.title}}</h2>
 			<p class="project-desc">{{include.desc}}</p>
 			<p class="project-language mono">{{include.language}}</p>
