@@ -32,14 +32,14 @@ html.is-animating .transition-fade{
 
 .show-mobile {
   display: block;
-  @media (min-width: $md) {
+  @media (min-width: $lg) {
     display: none;
   }
 }
 
 .show-desktop {
   display: none;
-  @media (min-width: $md) {
+  @media (min-width: $lg) {
     display: block;
   }
 }

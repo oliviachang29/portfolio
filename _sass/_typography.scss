@@ -52,13 +52,17 @@ a {
 	}
 }
 
-p {
+p, li {
 	font-family: $main-font;
 	font-weight: 100;
 	margin-top: 10px;
 	font-size: 18px;
 	color: #6D6D6D;
 	line-height: 30px;
+}
+
+li {
+	margin-top: 5px;
 }
 
 .quote {
