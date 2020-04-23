@@ -52,7 +52,7 @@ a {
 	}
 }
 
-p, li {
+p, li, h5 {
 	font-family: $main-font;
 	font-weight: 100;
 	margin-top: 10px;
@@ -66,6 +66,12 @@ li {
 }
 
 .quote {
-	/*font-weight: normal;*/
+	text-align: left !important;
+	border-left: 2px solid lightgray;
+	padding-left: 25px;
+}
+
+h5 {
 	color: black;
+	font-weight: normal;
 }

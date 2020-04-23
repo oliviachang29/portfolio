@@ -3,7 +3,7 @@
 	<div class="row">
 		{% assign projects = site.client_work | sort: "order" %}
 		{% for project in projects %}
-			{% unless project.hidden == "true" %}
+			{% unless project.hidden %}
 				{% include project-types/small-project.html 
 					title=project.title
 					desc=project.desc 

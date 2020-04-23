@@ -45,13 +45,12 @@
 
 	h3 {
 		color: black;
-		margin-top: 10px;
 	}
 
 	p {
 		@include smooth-transition;
 
 		font-family: $main-font;
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 }
