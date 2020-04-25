@@ -7,13 +7,15 @@
 		<div class="project-image-frame noselect" style="background-color: {{include.color}}">
 			<img
 				class="lazy"
-				src="/assets/images/lazy.jpg"
+				src="/assets/images/lazy-project.jpg"
 				data-src="{{include.large_image_url}}">
 		</div>
 		<div class="project-info">
 			<p class="project-index">{% if include.index < 10 %}0{% endif %}{{include.index}}</p>
-			<h2 class="project-title">{{include.title}}</h2>
-			<p class="project-desc">{{include.desc}}</p>
+			<div>
+				<h2 class="project-title">{{include.title}}</h2>
+				<p class="project-desc">{{include.desc}}</p>
+			</div>
 			<p class="project-language mono">{{include.language}}</p>
 		</div>
 	</div>

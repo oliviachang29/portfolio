@@ -48,11 +48,8 @@
 
 .project-image-frame {
 	overflow: hidden;
-	height: 512px;
-
-	@media (min-width: $lg) {
-		width: 55%;
-	}
+	width: 55%;
+	/*height: 512px;*/
 }
 
 .project-type-spacer {
@@ -75,24 +72,12 @@
 }
 
 .project-info {
-
-	width: calc(100% - 80px);
-
-	@media (min-width: $xs) {
-		width: calc(100% - 160px);
-	}
-
-	@media (min-width: $sm) {
-		width: 50%;
-	}
-	@media (min-width: $lg) {
-		width: 39%;
-	}
 	padding: 20px 50px 30px;
 	display: flex;
 	flex-direction: column;
-
 	overflow-x: hidden;
+	width: 39%;
+	justify-content: space-between;
 }
 
 .project-index {
@@ -122,5 +107,5 @@
 }
 
 .project-language {
-	margin-top: auto;
+	margin-top: 10%;
 }
