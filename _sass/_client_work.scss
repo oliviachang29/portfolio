@@ -41,6 +41,7 @@
 
 	img {
 		@include smooth-transition;
+		margin-bottom: 30px;
 	}
 
 	h3 {
@@ -51,6 +52,6 @@
 		@include smooth-transition;
 
 		font-family: $main-font;
-		margin-top: 10px;
+		margin-top: 0px;
 	}
 }
