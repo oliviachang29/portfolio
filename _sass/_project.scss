@@ -52,10 +52,6 @@
 	/*height: 512px;*/
 }
 
-.project-type-spacer {
-	margin-bottom: 30px;
-}
-
 .project-type {
 	/* hide in mobile*/
 	@media (max-width: $sm) {
@@ -63,9 +59,10 @@
 	}
 
 	width: $left-padding;
-	padding-top: 20px;
+	padding-top: 50px;
 
 	p {
+		text-align: right;
 		font-size: 14px;
 		transform: rotate(90deg);
 	}
