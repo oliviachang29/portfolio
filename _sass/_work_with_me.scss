@@ -1,0 +1,28 @@
+@import "variables";
+
+.list-style-type-none {
+	list-style-type: none;
+	padding-inline-start: 0;
+}
+
+#work-with-me {
+	padding: 100px $left-padding 50px $left-padding;
+	@media (min-width: $sm) {
+		padding: 7.5% $left-padding 50px $left-padding;
+	}
+	h1 {
+		font-family: Apercu Pro;
+		font-weight: bold;
+		font-size: 48px;
+		color: #000000;
+		margin-bottom: 30px;
+	}
+
+	.top-text {
+		margin-bottom: 20px;
+	}
+
+	.bottom-text {
+		margin-top: 50px;
+	}
+}

@@ -8,11 +8,20 @@ nav {
 	}
 }
 
-.navbar-nav {
-	flex-direction: row !important;
-}
-
 .nav-link-x {
 	@includes smooth-transition;
 	opacity: 0;
+}
+
+.navbar-toggler {
+	margin-top: 20px;
+	border: none;
+	&:focus {
+		border: none;
+		outline: none;
+	}
+}
+
+.navbar-collapse {
+	padding-left: 15px;
 }

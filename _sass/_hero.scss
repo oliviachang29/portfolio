@@ -1,10 +1,10 @@
 @import "variables";
 #hero {
-	@media (max-width: $sm) {
-		margin: 100px auto 100px $left-padding;
+	width: 100%;
+	padding: 100px $left-padding 100px $left-padding;
+	@media (min-width: $sm) {
+		padding: 7.5% $left-padding 80px $left-padding;
 	}
-
-	margin: 7.5% auto 80px $left-padding;
 	h1 {
 		font-family: Apercu Pro;
 		font-weight: bold;
@@ -21,8 +21,4 @@
 			margin-top: 23px;
 		}
 	}
-}
-
-.hero-home {
-	margin-bottom: 10%;
 }
