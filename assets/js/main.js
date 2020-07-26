@@ -15,16 +15,10 @@ function initJS() {
     // $(".video-container").fitVids();
 
     if (window.location.pathname != '/') {
-        $('.nav-link-x').css({
-            opacity: 1,
-            cursor: 'pointer'
-        });
+        $('.nav-link-x').fadeIn();
         scroll.animateScroll(0);
     } else {
-        $('.nav-link-x').css({
-            opacity: 0,
-            cursor: 'default'
-        });
+        $(".nav-link-x").fadeOut();
     }
 
 }
