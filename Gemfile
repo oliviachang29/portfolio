@@ -3,6 +3,7 @@ ruby RUBY_VERSION
 
 gem "jekyll", ">= 3.6.3"
 gem "minima", "~> 2.0"
+gem "kramdown-parser-gfm"
 
 group :development do
   gem 'guard'
