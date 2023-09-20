@@ -1,32 +1,12 @@
-<!-- <div class="show-desktop">
-	{% assign projects = site.client_work | sort: "order" %}
-	{% assign project_index = 0 %}	
-	{% for project in projects %}
-		{% unless project.hidden %}
-			{% assign project_index = project_index | plus:1 %}
-			{% include project-types/desktop-project.html 
-				url=project.url
-				large_image_url=project.large_image_url
-				index=project_index
-				type=project.type
-				title=project.title
-				desc=project.desc
-				language=project.language
-				color=project.color
-			%}
-		{% endunless %}
-	{% endfor %}
-</div> -->
 
-
-		<section class="section-small-projects">
+	<section class="section-small-projects">
 		<div class="row">
 			{% assign projects = site.client_work | sort: "order" %}
 			{% for project in projects %}
 				{% unless project.hidden %}
 					{% include project-types/small-project.html 
 						title=project.title
-						desc=project.desc
+						desc=project.type
 						col_type="col-md-6"
 						%}
 				{% endunless %}
